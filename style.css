@@ -1,7 +1,7 @@
 
 body{
     background-image: url('images/fond.jpg');
-    cursor:grabbing;
+    cursor:none;
 }
 
 nav {
@@ -9,40 +9,37 @@ nav {
 	display: flex;
 	flex-wrap:wrap;
     flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	position: sticky;
+    border-bottom: grey 1px solid;
 }
-nav .profile {
-	display: flex;
-	align-items: center;
-}
+
 nav .profile img {
     width: 250px;
     height: 93px;
     border-radius: 50%;
 }
-nav .profile h1 {
-    margin-left: 10px;
-    font-size: 15px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+
 ul {
     display: flex;
     list-style-type: none;
 }
+
 li{
     margin-left: 20px;
-    cursor: pointer;
     border-bottom: 1px solid white;
 }
+
 li:hover{
     border-bottom-color: red;
 }
+
 section {
     margin: 4%;
 
 }
+
 .bouton {
     border: none;
     outline: none;
@@ -50,15 +47,17 @@ section {
     font-weight: bold;
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
-    cursor: pointer;
+    cursor: none;
     margin-right: 15px;
 }
+
 .bouton :hover{
-    color: black;
     border-bottom-color:black ;
 }
 
-
+header{
+    color: white;
+}
 header h1{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     font-size: 40px;
@@ -66,5 +65,4 @@ header h1{
 header div{
     font-size: 20px;
     line-height: 150%;
-
 }
