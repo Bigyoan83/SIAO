@@ -85,5 +85,12 @@ section {
     padding: 30px;
     background-color: aliceblue;
 }
+ .map {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+ }
 
-
+ #maps {
+    border-radius: 10px;
+ }
