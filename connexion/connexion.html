@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - SIAO 83</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+
+    <nav>
+        <div class="profile">
+            <img src="../images/SIAO.webp">
+        </div>
+        <ul>
+            <li class="bouton"><a href="../home.html">Accueil</a></li>
+            <li class="bouton"><a href="../Service/Service.html">Nos Services</a></li>
+            <li class="bouton">Gouvernance</li>
+            <li class="bouton">Le SIAO</li>
+            <li class="bouton">Actualité</li>
+            <li class="bouton"><a href="/connexion/connexion.html">Se Connecter</a></li>
+        </ul>   
+    </nav>
+
+    <div class="login-container">
+        <h2>Se Connecter</h2>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Connexion</button>
+            </div>
+            <p class="register-link">Pas encore de compte ? <a href="/register">Inscrivez-vous</a></p>
+        </form>
+    </div>
+
+</body>
+</html>
