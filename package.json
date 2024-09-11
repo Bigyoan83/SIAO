@@ -9,7 +9,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
     "cors": "^2.8.5",
     "express": "^4.19.2"
+=======
+    "express": "^4.19.2",
+    "mongodb": "6.8"
+>>>>>>> refs/remotes/origin/main
   }
 }
