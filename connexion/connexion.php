@@ -11,9 +11,11 @@ if ($connexion->connect_error) {
     die("Connexion échouée : " . $connexion->connect_error);
 }
 // Requête SQL pour récupérer les utilisateurs
+
 $email = $_POST['email'];
 
 $sql = "SELECT id, nom, mot_de_passe , email FROM utilisateur WHERE email = '$email'";
+
 // echo $sql;
 $resultat = $connexion->query($sql);
 
