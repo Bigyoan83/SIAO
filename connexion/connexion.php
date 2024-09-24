@@ -12,6 +12,10 @@ if ($connexion->connect_error) {
 }
 // Requête SQL pour récupérer les utilisateurs
 $email = 'jeff@gmail.com';
+if (isset($_POST['email'])){
+    $email_input = $_POST['email']
+    $email .= $email_input
+}
 $sql = "SELECT id, nom, mot_de_passe , email FROM utilisateur WHERE email = 'jeff@gmail.com'";
 // echo $sql;
 $resultat = $connexion->query($sql);
