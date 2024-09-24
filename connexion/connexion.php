@@ -13,11 +13,16 @@ if ($connexion->connect_error) {
 // Requête SQL pour récupérer les utilisateurs
 $email = 'jeff@gmail.com';
 $sql = "SELECT id, nom, mot_de_passe , email FROM utilisateur WHERE email = 'jeff@gmail.com'";
-
+// echo $sql;
 $resultat = $connexion->query($sql);
+
+
+$row = $resultat->fetch_assoc();
+
+
 if ($resultat->num_rows > 0) {
     if($_POST['email'] == $row["email"] && $_POST['mot_de_passe'] == $row["mot_de_passe"]){
-        echo ("Vous êtes bien connecté à l'utilisateur". $row['nom']);
+        echo ("Vous êtes bien connecté à l'utilisateur ". $row['mot_de_passe']);
     } else{
         return ("connexion echouée");
 }
