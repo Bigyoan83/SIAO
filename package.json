@@ -9,9 +9,18 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
+    "cors": "^2.8.5",
     "express": "^4.19.2"
+<<<<<<< HEAD
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
+=======
+=======
+    "express": "^4.19.2",
+    "mongodb": "6.8"
+>>>>>>> refs/remotes/origin/main
+>>>>>>> 0731c0097d25693ea07e85a0847b1ff5fafca58f
   }
 }
