@@ -19,7 +19,7 @@ if ($resultat->num_rows > 0) {
         echo ("Vous êtes bien connecté à l'utilisateur ". $row['nom']);
     }
 } else{
-    echo ("connexion echouée");
+    echo ("email ou mot de passe incorect");
 }
 // Fermer la connexion
 $connexion->close();
