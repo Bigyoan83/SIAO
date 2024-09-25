@@ -8,7 +8,6 @@ $email = $_POST['email'];
 $password = $_POST['mot_de_passe'];
 
 $sql = "INSERT INTO utilisateur (id, nom, email, mot_de_passe) VALUES (1, '$nom', '$email', '$password')";
-$bdd->exec($sql);
 if ($connexion->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
