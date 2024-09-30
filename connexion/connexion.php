@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Connexion à la base de données avec le fichier connexion_BDD.php
 include('../Connexion_BDD.php');
 
@@ -18,7 +19,7 @@ if ($resultat->num_rows > 0) {
     if($_POST['email'] == $row["email"] && $_POST['mot_de_passe'] == $row["mot_de_passe"]){
         echo ("Vous êtes bien connecté à l'utilisateur ". $row['nom']);
     }
-} else{
+} else {
     echo ("email ou mot de passe incorect");
 }
 // Fermer la connexion
