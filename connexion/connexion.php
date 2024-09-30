@@ -17,7 +17,7 @@ $row = $resultat->fetch_assoc();
 
 if ($resultat->num_rows > 0) {
     if($_POST['email'] == $row["email"] && $_POST['mot_de_passe'] == $row["mot_de_passe"]){
-        echo ("Vous êtes bien connecté à l'utilisateur ". $row['nom']);
+        header('Location: http://localhost/SIAO/connexion/profil.php');
     }
 } else {
     echo ("email ou mot de passe incorect");
