@@ -35,7 +35,7 @@ session_start();
         </nav>
     <section class="bienvenue">
         <h2>Ajouter un nouvel article</h2>
-        <form action="article.php" method="POST">
+        <form action="ajout_article.php" method="POST">
             <div>
                 <label class="label" for="titre">Titre de l'article :</label><br>
                 <input type="text" class="titre" name="titre">
