@@ -1,10 +1,14 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <title> SIAO 83 </title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <nav>
@@ -12,14 +16,23 @@
                 <img src="images/SIAO.webp">
             </div>
             <ul>
-                <li class="bouton"><a href="home.html">Accueil</a></li>
-                <li class="bouton"><a href="Service/Service.html">Nos Services</a></li>
+                <li class="bouton"><a href="home.php">Accueil</a></li>
+                <li class="bouton"><a href="Service/Service.php">Nos Services</a></li>
                 <li class="bouton">Gouvernance</li>
                 <li class="bouton">Le SIAO</li>
                 <li class="bouton">Actualité</li>
-                <li class="bouton"> <a href="../SIAO/connexion/connexion.html">Se Connecter/S'inscrire</li></a>
+
+                <!-- Vérifiez si l'utilisateur est connecté -->
+                <?php if (isset($_SESSION['user_name'])): ?>
+                    <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
+                    <li class="bouton"><a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                <?php else: ?>
+                    <!-- Sinon, on affiche le bouton de connexion -->
+                    <li class="bouton"><a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
+                <?php endif; ?>
             </ul>   
         </nav>
+
         <div class="présentation">
             <div class="accueil">
                 <section class="bienvenue">
@@ -34,6 +47,7 @@
                 <img src="images/Région_Sud_83.png">
             </div>
         </div>
+
         <div class="actu">
             <section class="nos-actu">
                 <h2>
@@ -41,6 +55,7 @@
                 </h2>
             </section>
         </div>
+
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.9782952425126!2d6.758187475365137!3d43.429632966863046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97f07281724b%3A0x87d23ffec9c62660!2sSIAO-115%20du%20VAR!5e1!3m2!1sfr!2sfr!4v1725000504505!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
         </div>

@@ -1,33 +1,29 @@
 <?php
-// Connexion à la base de données
-$serveur = "localhost";
-$utilisateur = "root";
-$motDePasse = "";
-$nomBaseDeDonnees = "mon_site_web";
-
 session_start();
-// Connexion à la base de données avec le fichier connexion_BDD.php
 include('../Connexion_BDD.php');
 
-
-// Requête SQL pour récupérer les utilisateurs
 $email = $_POST['email'];
+$mot_de_passe = $_POST['mot_de_passe'];
 
-$sql = "SELECT id, nom, mot_de_passe , email FROM utilisateur WHERE email = '$email'";
-
-// echo $sql;
-$resultat = $connexion->query($sql);
-
+$sql = $connexion->prepare("SELECT id, nom, mot_de_passe, email FROM utilisateur WHERE email = ?");
+$sql->bind_param("s", $email);
+$sql->execute();
+$resultat = $sql->get_result();
 $row = $resultat->fetch_assoc();
 
-
-if ($resultat->num_rows > 0) {
-    if($_POST['email'] == $row["email"] && $_POST['mot_de_passe'] == $row["mot_de_passe"]){
-        header('Location: http://localhost/SIAO/connexion/profil.php');
+if ($row) {
+    if ($mot_de_passe == $row["mot_de_passe"]) {
+        // Stocker le nom dans la session
+        $_SESSION['user_name'] = $row['nom'];
+        header('Location: ../home.php'); // Redirection vers la page d'accueil après connexion
+        exit();
+    } else {
+        echo "Mot de passe incorrect";
     }
 } else {
-    echo ("email ou mot de passe incorect");
+    echo "Email ou mot de passe incorrect";
 }
-// Fermer la connexion
+
 $connexion->close();
 ?>
+

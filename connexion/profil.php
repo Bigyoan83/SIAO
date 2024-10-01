@@ -1,7 +1,11 @@
 <?php
-
 session_start();
-include('..//Connexion_BDD.php');
+include('../Connexion_BDD.php');
+
+if (!isset($_SESSION['user_name'])) {
+    header('Location: http://localhost/SIAO/connexion/connexion.html');
+    exit();
+}
 
 $user_name = $_SESSION['user_name'];
 ?>
@@ -12,9 +16,11 @@ $user_name = $_SESSION['user_name'];
     <title>Profil</title>
 </head>
 <body>
-    <h1>Bienvenue sur votre profil, <?php echo $user_name; ?> !</h1>
+    <h1>Bienvenue sur votre profil, 
+        <?php echo htmlspecialchars($user_name); // htmlspecialchars pour éviter les injections XSS
+        ?>!</h1>
     <p>Voici vos informations :</p>
-    <!-- Tu peux afficher d'autres informations de l'utilisateur ici -->
+    
     
     <a href="logout.php">Déconnexion</a>
 </body>
