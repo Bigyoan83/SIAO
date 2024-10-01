@@ -15,6 +15,8 @@ if ($row) {
     if ($mot_de_passe == $row["mot_de_passe"]) {
         // Stocker le nom dans la session
         $_SESSION['user_name'] = $row['nom'];
+        $_SESSION['success_message'] = "Connexion réussie, bienvenue " . $row['nom'] . " !";
+        
         header('Location: ../home.php'); // Redirection vers la page d'accueil après connexion
         exit();
     } else {

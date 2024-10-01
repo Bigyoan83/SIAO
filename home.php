@@ -33,6 +33,18 @@ session_start();
             </ul>   
         </nav>
 
+
+         <!-- Affichage du message de succès -->
+         <?php if (isset($_SESSION['success_message'])): ?>
+            <div class="message-succes">
+                <p><?php echo htmlspecialchars($_SESSION['success_message']); ?></p>
+            </div>
+            <?php
+            // Supprimer le message de succès après l'avoir affiché
+            unset($_SESSION['success_message']);
+            ?>
+        <?php endif; ?>
+            
         <div class="présentation">
             <div class="accueil">
                 <section class="bienvenue">
