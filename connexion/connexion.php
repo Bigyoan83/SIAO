@@ -2,7 +2,7 @@
 // Connexion à la base de données
 $serveur = "localhost";
 $utilisateur = "root";
-$motDePasse = "root";
+$motDePasse = "";
 $nomBaseDeDonnees = "mon_site_web";
 
 $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $nomBaseDeDonnees);
