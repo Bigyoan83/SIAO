@@ -17,8 +17,8 @@ session_start();
                 <img src="../images/SIAO.webp">
             </div>
             <ul>
-                <li class="bouton"><a href="home.php">Accueil</a></li>
-                <li class="bouton"><a href="Service/Service.php">Nos Services</a></li>
+                <li class="bouton"><a href="../home.php">Accueil</a></li>
+                <li class="bouton"><a href="../Service/Service.php">Nos Services</a></li>
                 <li class="bouton">Gouvernance</li>
                 <li class="bouton">Le SIAO</li>
                 <li class="bouton">Actualité</li>
@@ -38,11 +38,11 @@ session_start();
         <form action="ajout_article.php" method="POST">
             <div>
                 <label class="label" for="titre">Titre de l'article :</label><br>
-                <input type="text" class="titre" name="titre">
+                <input type="text" class="titre" name="titre" required>
             </div>
             <div>
                 <label class="label" for="contenu">Contenu de l'article :</label><br>
-                <textarea class="content" name="content" rows="8"></textarea>
+                <textarea class="content" name="content" rows="8" required></textarea>
             </div>
             <button type="submit" class="bouton">Ajouter l'article</button>
         </form>
