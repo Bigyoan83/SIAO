@@ -13,6 +13,8 @@ $user_name = $_SESSION['user_name'];
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="menu_deroulant.css">
     <title>Profil</title>
 </head>
 <body>
@@ -20,8 +22,22 @@ $user_name = $_SESSION['user_name'];
         <?php echo htmlspecialchars($user_name); // htmlspecialchars pour éviter les injections XSS
         ?>!</h1>
     <p>Voici vos informations :</p>
-    
-    
-    <a href="logout.php">Déconnexion</a>
+
+      
+    <div class="déconnexion">
+        <a href="logout.php">Déconnexion</a>
+    </div>
+
+    <div class="menuderoulant">
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Article</a>
+                <div class="dropdown-content">
+                    <a href="../article/article.php">Ajouter un article</a>
+                    <a href="..//article/liste.php">Liste des articles</a>
+                    <a href="modifier_article.php">Modifier un article</a>
+                    <a href="supprimer_article.php">Supprimer un article</a>
+                </div>
+        </li>
+    </div>
 </body>
 </html>
