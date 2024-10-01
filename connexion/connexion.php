@@ -1,15 +1,13 @@
 <?php
-<<<<<<< HEAD
 // Connexion à la base de données
 $serveur = "localhost";
 $utilisateur = "root";
 $motDePasse = "";
 $nomBaseDeDonnees = "mon_site_web";
-=======
+
 session_start();
 // Connexion à la base de données avec le fichier connexion_BDD.php
 include('../Connexion_BDD.php');
->>>>>>> 00774fe5a66e36d50a1c1efe0f39438a99974fe4
 
 
 // Requête SQL pour récupérer les utilisateurs
