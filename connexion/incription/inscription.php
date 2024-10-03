@@ -9,8 +9,10 @@ $password = $_POST['mot_de_passe'];
 
 $sql = "INSERT INTO utilisateur (nom, email, mot_de_passe) VALUES ('$nom', '$email', '$password')";
 if ($connexion->query($sql) === TRUE) {
-    echo "New record created successfully";
-    header('Location: http://localhost/SIAO/connexion/connexion.html');
+    echo '<script type="text/javascript">
+            alert("Votre inscription à été complétée");
+            document.location.href="../connexion.html";
+        </script>;';
 } else {
     echo "Error: " . $sql . "<br>" . $connexion->error;
 }
