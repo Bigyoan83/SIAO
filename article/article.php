@@ -1,12 +1,15 @@
 <?php
 session_start();
+if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
+    header('Location: http://localhost/SIAO/home.php');
+}
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../style.css"/>
-        <link rel="stylesheet" type="text/css" href="article.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/article.css"/>
         <title> SIAO 83 </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">

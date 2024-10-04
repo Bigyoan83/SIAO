@@ -5,8 +5,8 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="Service.css"/>
-        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/Service.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
         <title> SIAO 83 </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
