@@ -6,7 +6,7 @@ session_start();
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
         <link rel="stylesheet" type="text/css" href="../css/article.css"/>
         <title> SIAO 83 </title>
         <meta charset="UTF-8">

@@ -8,7 +8,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
         <link rel="stylesheet" type="text/css" href="../css/article.css"/>
         <title> SIAO 83 </title>
         <meta charset="UTF-8">
