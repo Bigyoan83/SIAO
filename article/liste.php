@@ -22,7 +22,7 @@ session_start();
                 <li class="bouton"><a href="../Service/Service.php">Nos Services</a></li>
                 <li class="bouton">Gouvernance</li>
                 <li class="bouton">Le SIAO</li>
-                <li class="bouton"><a href="../actualités.php">Actualité</a></li>
+                <li class="bouton"><a href="../actualites.php">Actualité</a></li>
                 <!-- Vérifiez si l'utilisateur est connecté -->
                 <?php if (isset($_SESSION['user_name'])): ?>
                     <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
