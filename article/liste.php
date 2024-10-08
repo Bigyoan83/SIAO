@@ -52,7 +52,7 @@ if ($resultat->num_rows > 0) {
             <p style="color: #888; font-size: 12px;">Publié par ' . htmlspecialchars($row["nom"]) . ' le ' . htmlspecialchars($row["date_creation"]) . '</p>
             <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;">Lire plus</a>
             <div>
-                <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img src="../images/modif.png" style="width: 30px; height: 30px"></a>
+                <a href="modif_article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img src="../images/modif.png" style="width: 30px; height: 30px"></a>
                 <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img src="../images/supprimer.png" style="width: 3s0px; height: 30px"></a>
             </div>
         </div>';
