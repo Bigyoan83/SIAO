@@ -44,7 +44,9 @@ $resultat = $sql->get_result();
 if ($resultat->num_rows > 0) {
     echo '<div style="display: flex; flex-wrap: wrap; gap: 20px;">'; // Conteneur flex pour les cartes
     // Afficher les résultats sous forme de cartes
+
     while ($row = $resultat->fetch_assoc()) {
+        $id = $row["id"];
         echo '
         <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
             <h2 style="font-size: 20px; color: #333;">' . htmlspecialchars($row["titre"]) . '</h2>
@@ -52,8 +54,8 @@ if ($resultat->num_rows > 0) {
             <p style="color: #888; font-size: 12px;">Publié par ' . htmlspecialchars($row["nom"]) . ' le ' . htmlspecialchars($row["date_creation"]) . '</p>
             <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;">Lire plus</a>
             <div>
-                <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img src="../images/modif.png" style="width: 30px; height: 30px"></a>
-                <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img src="../images/supprimer.png" style="width: 3s0px; height: 30px"></a>
+                <a href="modif_article.php" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img src="../images/modif.png" style="width: 30px; height: 30px" ></a>
+                <a href="supprimer_article.php" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img  src="../images/supprimer.png" style="width: 3s0px; height: 30px"></a>
             </div>
         </div>';
     }
