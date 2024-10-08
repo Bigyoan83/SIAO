@@ -38,7 +38,7 @@ session_start();
 <?php
 include('Connexion_BDD.php');
 
-$sql = $connexion->prepare("SELECT id, titre, content, nom, date_creation FROM article");
+$sql = $connexion->prepare("SELECT id, titre, accroche, content, nom, date_creation FROM article");
 $sql->execute();
 $resultat = $sql->get_result();
 
@@ -49,7 +49,7 @@ if ($resultat->num_rows > 0) {
         echo '
         <div style="border: 1px solid #ddd; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
             <h2 style="font-size: 20px; color: #333;">' . htmlspecialchars($row["titre"]) . '</h2>
-            <p style="color: #555; font-size: 14px; margin-bottom: 10px;">' . htmlspecialchars($row["content"]) . '</p>
+            <h3 style="font-size: 20px; color: #333;">' . htmlspecialchars($row["accroche"]) . '</h3>
             <p style="color: #888; font-size: 12px;">Publié par ' . htmlspecialchars($row["nom"]) . ' le ' . htmlspecialchars($row["date_creation"]) . '</p>
             <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;">Lire plus</a>
         </div>';
