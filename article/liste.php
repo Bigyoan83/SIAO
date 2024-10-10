@@ -1,6 +1,13 @@
 
 <?php
 session_start();
+include('./supprimer_article.php');
+if (isset($_GET['id'])){
+    $del = $_GET['id'];
+    $sql->bind_param("s", $del);
+    $sql->execute();
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +62,7 @@ if ($resultat->num_rows > 0) {
             <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;">Lire plus</a>
             <div>
                 <a href="modif_article.php" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img src="../images/modif.png" style="width: 30px; height: 30px" ></a>
-                <a href="supprimer_article.php" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img  src="../images/supprimer.png" style="width: 3s0px; height: 30px"></a>
+                <a href="liste.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;"> <img  src="../images/supprimer.png" style="width: 3s0px; height: 30px"></a>
             </div>
         </div>';
     }
