@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../Connexion_BDD.php'); // Inclure la connexion à la base de données
+include('../Connexion_BDD.php'); 
 
 // Vérifier si l'ID de l'article est passé dans l'URL
 if (isset($_GET['id'])) {
@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
 
     // Récupérer l'article correspondant à l'ID
     $sql = $connexion->prepare("SELECT id, titre, content, nom FROM article WHERE id = ?");
-    $sql->bind_param("i", $article_id); //Lier la variable article_id à la requête SQL, en indiquant qu'il s'agit d'un entier (i).
+    $sql->bind_param("i", $article_id);
     $sql->execute();
     $result = $sql->get_result();
 
@@ -54,8 +54,6 @@ if (isset($_POST['update'])) {
 <body>
 
 <h1>Modifier l'Article</h1>
-
-<!-- Formulaire de modification -->
 <form method="post">
     <label for="titre">Titre de l'article :</label><br>
     <input type="text" id="titre" name="titre" value="<?php echo htmlspecialchars($article['titre']); ?>" required><br><br>

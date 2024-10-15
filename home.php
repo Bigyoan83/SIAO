@@ -6,35 +6,37 @@ session_start();
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title> SIAO 83 </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="body">
-            <nav >
+            <nav class="nav" id="topNav">
                 <div class="profile">
                     <img src="images/SIAO.webp">
                 </div>
-                <ul class="nav1">
+                <ul>
                     <div>
-                        <li class="bouton"><a href="home.php">Accueil</a></li>
-                        <li class="bouton"><a href="Service/le_SIAO.php">Qui sommes nous ?</a></li>
-                        <li class="bouton">Gouvernance</li>
-                        <li class="bouton">Le SIAO</li>
-                        <li class="bouton"><a href="./actualites.php">Actualité</a></li>
+                    <a href="#home" class="active">Accueil</a>
+                    <a href="Service/le_SIAO.php">Qui sommes nous ?</a>
+                    <a href="#contact">Contact</a>
+                    <a href="article/liste.php">Actualité</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                         <!-- Vérifiez si l'utilisateur est connecté -->
                         <?php if (isset($_SESSION['user_name'])): ?>
                             <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                            <li class="bouton"><a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                            <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
                         <?php else: ?>
                             <!-- Sinon, on affiche le bouton de connexion -->
-                            <li class="bouton"><a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
+                            <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
                         <?php endif; ?>
                    </div>
                 </ul>  
             </nav>
-
 
             <!-- Affichage du message de succès -->
             <?php if (isset($_SESSION['success_message'])): ?>
@@ -75,5 +77,7 @@ session_start();
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.9782952425126!2d6.758187475365137!3d43.429632966863046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97f07281724b%3A0x87d23ffec9c62660!2sSIAO-115%20du%20VAR!5e1!3m2!1sfr!2sfr!4v1725000504505!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
             </div>
         </div>
+
+        <script src="Scrip.js"></script>
     </body>
 </html>
