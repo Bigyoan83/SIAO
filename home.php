@@ -67,9 +67,7 @@ session_start();
                         Actualité
                     </h2>
                     <div>
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed dicta laudantium adipisci voluptates quam commodi veritatis molestias. Earum nisi quisquam doloribus, incidunt assumenda harum ab non sint facere excepturi.
-                        </p>    
+                 
                     </div>
                 </section>
             </div>
