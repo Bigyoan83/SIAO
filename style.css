@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
+@media screen and (max-width:900px) {
+    .bouton {width: 30%;}
+    .body {font-size: smaller}
+}
+@media screen and (max-width:700px) {
+    .bouton {width: 15%;}
+    .body {font-size: smaller}
+}
+@media screen and (max-width:500px) {
+    .bouton {width: 10%;}
+    .body {font-size: smaller}
+}
 #body{
     margin: auto;
     width: 90%;
@@ -22,8 +34,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	position: sticky;
-    border-bottom: grey 1px solid;
-    border-radius: 15px;
+    border-bottom: black 2px solid;
 }
 
 nav .profile img {
@@ -73,10 +84,7 @@ section {
 }
 
 .bouton :hover{
-   background-color: beige;
-   border-radius: 10px;
    padding: 10px;
-   opacity: 70%;
    transition-duration: 0.4s;
 }
 

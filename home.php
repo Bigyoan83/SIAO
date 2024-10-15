@@ -12,7 +12,7 @@ session_start();
     </head>
     <body>
         <div class="body">
-            <nav>
+            <nav >
                 <div class="profile">
                     <img src="images/SIAO.webp">
                 </div>
