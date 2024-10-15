@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
 @media screen and (max-width:900px) {
+    .nav1 {}
     .bouton {width: 30%;}
-    .body {font-size: smaller}
-}
-@media screen and (max-width:700px) {
-    .bouton {width: 15%;}
-    .body {font-size: smaller}
-}
-@media screen and (max-width:500px) {
-    .bouton {width: 10%;}
     .body {font-size: smaller}
 }
 #body{
