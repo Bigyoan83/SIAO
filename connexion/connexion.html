@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="../css/connexion.css">
 </head>
 <body>
-
-    <nav>
+    
+    <nav class="nav" id="topNav">
         <div class="profile">
             <img src="../images/SIAO.webp">
         </div>
         <ul>
-            <li class="bouton"><a href="../home.php">Accueil</a></li>
-            <li class="bouton"><a href="../Service/le_SIAO.php">Qui sommes nous ?</a></li>
-            <li class="bouton">Gouvernance</li>
-            <li class="bouton">Le SIAO</li>
-            <li class="bouton"><a href="../actualites.php">Actualité</a></li>
-            <li class="bouton"><a href="./connexion.html">Se Connecter</a></li>
-        </ul>   
+            <div>
+                <a href="#home" class="active">Accueil</a>
+                <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
+                <a href="#contact">Contact</a>
+                <a href="../article/liste.php">Actualité</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+           </div>
+        </ul>  
     </nav>
 
     <div class="login-container">
@@ -40,6 +43,6 @@
             <p class="register-link">Pas encore de compte ? <a href="incription/inscription.html">Inscrivez-vous</a></p>
         </form>
     </div>
-    <script src="/Scrip.js"></script>
+    <script src="../Scrip.js"></script>
 </body>
 </html>
