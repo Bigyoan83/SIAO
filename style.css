@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
 @media screen and (max-width:900px) {
-    .nav1 {}
     .bouton {width: 30%;}
     .body {font-size: smaller}
 }
@@ -20,6 +19,7 @@ body {
 }
 
 nav {
+    background-color: white;
     color: black;
 	display: flex;
 	flex-wrap:wrap;
