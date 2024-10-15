@@ -5,7 +5,7 @@ echo $_POST['nom'].'<br>';
 
 $nom = $_POST['nom'];
 $email = $_POST['email'];
-$password = $_POST['mot_de_passe'];
+$password = password_hash($_POST['mot_de_passe'],PASSWORD_DEFAULT);
 
 $sql = "INSERT INTO utilisateur (nom, email, mot_de_passe) VALUES ('$nom', '$email', '$password')";
 if ($connexion->query($sql) === TRUE) {
