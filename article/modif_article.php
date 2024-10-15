@@ -1,60 +1,70 @@
 <?php
+session_start();
+include('../Connexion_BDD.php'); // Inclure la connexion à la base de données
 
+// Vérifier si l'ID de l'article est passé dans l'URL
+if (isset($_GET['id'])) {
+    $article_id = $_GET['id'];
 
-if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
-    header('Location: http://localhost/SIAO/home.php');
+    // Récupérer l'article correspondant à l'ID
+    $sql = $connexion->prepare("SELECT id, titre, content, nom FROM article WHERE id = ?");
+    $sql->bind_param("i", $article_id); //Lier la variable article_id à la requête SQL, en indiquant qu'il s'agit d'un entier (i).
+    $sql->execute();
+    $result = $sql->get_result();
+
+    // Si l'article existe
+    if ($result->num_rows >= 0) {
+        $article = $result->fetch_assoc();
+    } else {
+        echo "Article non trouvé";
+        exit();
+    }
+} else {
+    echo "ID de l'article non fourni";
+    exit();
+}
+
+// Vérifier si le formulaire a été soumis pour la modification
+if (isset($_POST['update'])) {
+    $new_title = $_POST['titre'];
+    $new_content = $_POST['content'];
+
+    // Mettre à jour l'article dans la base de données
+    $sql_update = $connexion->prepare("UPDATE article SET titre = ?, content = ? WHERE id = ?");
+    $sql_update->bind_param("ssi", $new_title, $new_content, $article_id);
+
+    if ($sql_update->execute()) {
+        echo "L'article a été mis à jour avec succès.";
+        header("Location: liste.php"); // Rediriger vers la liste des articles après mise à jour
+        exit();
+    } else {
+        echo "Erreur lors de la mise à jour de l'article.";
+    }
 }
 ?>
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../style.css"/>
-        <link rel="stylesheet" type="text/css" href="../css/article.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <title> SIAO 83 </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    </head>
-    <body>
-        <nav>
-            <div class="profile">
-                <img src="../images/SIAO.webp">
-            </div>
-            <ul>
-                <li class="bouton"><a href="../home.php">Accueil</a></li>
-                <li class="bouton"><a href="../Service/Service.php">Nos Services</a></li>
-                <li class="bouton">Gouvernance</li>
-                <li class="bouton">Le SIAO</li>
-                <li class="bouton"><a href="../actualites.php">Actualité</a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier l'Article</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
-                <!-- Vérifiez si l'utilisateur est connecté -->
-                <?php if (isset($_SESSION['user_name'])): ?>
-                    <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                    <li class="bouton"><a href="../connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
-                <?php else: ?>
-                    <!-- Sinon, on affiche le bouton de connexion -->
-                    <li class="bouton"><a href="../connexion/connexion.html">Se Connecter/S'inscrire</a></li>
-                <?php endif; ?>
-            </ul>  
-        </nav>
-    <section class="bienvenue">
-        <h2>Modifier l'article</h2>
-        <form action="ajout_article.php" method="POST">
-            <div>
-                <label class="label" for="titre">Titre de l'article :</label><br>
-                <input type="text" class="titre" name="titre" required>
-            </div>
-            <div>
-                <label class="label" for="accroche">Phrase d'accroche</label><br>
-                <input class="accroche" type="text" name="accroche" rows="8" required></textarea>
-            </div>
-            <div>
-                <label class="label" for="contenu">Contenu de l'article :</label><br>
-                <textarea class="content" name="content" rows="8" required></textarea>
-            </div>
-            <button type="submit" class="bouton">Ajouter la modification</button>
-        </form>
-    </section>
+<h1>Modifier l'Article</h1>
+
+<!-- Formulaire de modification -->
+<form method="post">
+    <label for="titre">Titre de l'article :</label><br>
+    <input type="text" id="titre" name="titre" value="<?php echo htmlspecialchars($article['titre']); ?>" required><br><br>
+
+    <label for="content">Contenu de l'article :</label><br>
+    <textarea id="content" name="content" rows="10" cols="50" required><?php echo htmlspecialchars($article['content']); ?></textarea><br><br>
+
+    <button type="submit" name="update">Mettre à jour</button>
+</form>
+
 </body>
 </html>
