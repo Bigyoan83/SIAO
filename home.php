@@ -19,7 +19,7 @@ session_start();
                 <ul class="nav1">
                     <div>
                         <li class="bouton"><a href="home.php">Accueil</a></li>
-                        <li class="bouton"><a href="Service/Service.php">Nos Services</a></li>
+                        <li class="bouton"><a href="Service/le_SIAO.php">Qui sommes nous ?</a></li>
                         <li class="bouton">Gouvernance</li>
                         <li class="bouton">Le SIAO</li>
                         <li class="bouton"><a href="./actualites.php">Actualité</a></li>
@@ -67,9 +67,7 @@ session_start();
                         Actualité
                     </h2>
                     <div>
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed dicta laudantium adipisci voluptates quam commodi veritatis molestias. Earum nisi quisquam doloribus, incidunt assumenda harum ab non sint facere excepturi.
-                        </p>    
+                 
                     </div>
                 </section>
             </div>
