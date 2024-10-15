@@ -17,7 +17,7 @@ session_start();
             </div>
             <ul>
                 <li class="bouton"><a href="../home.php">Accueil</a></li>
-                <li class="bouton"><a href="../Service/Service.php">Nos Services</a></li>
+                <li class="bouton"><a href="Service/le_SIAO">Qui sommes nous ?</a></li>
                 <li class="bouton">Gouvernance</li>
                 <li class="bouton">Le SIAO</li>
                 <li class="bouton"><a href="../actualites.php">Actualité</a></li>
