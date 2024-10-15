@@ -28,8 +28,7 @@ if ($row) {
 } else {
     echo "Email ou mot de passe incorrect";
 }
-password_hash();
-password_verify();
+
 $connexion->close();
 ?>
 
