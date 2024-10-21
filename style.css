@@ -35,23 +35,33 @@
 }
 
 body {
-    background: linear-gradient(to bottom right, rgb(21, 119, 239), rgb(255, 255, 255), rgb(239, 155, 21));
+    background: linear-gradient(to bottom right, rgb(2, 90, 197), rgb(255, 255, 255), rgb(239, 155, 21));
     font-family: 'DM Sans';
     font-size: 1.5rem;
     margin: 0px;
 }
-
+ul {
+  padding: 0;
+  margin: 0;
+}
+.imglogo {
+  width: 35%;
+  height: 80%;
+}
 .nav {
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
-    background-color: #333;
+    background-color: #ffffff;
   }
   
 .nav a {
+    font-weight: bold;
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
-    padding: 14px 16px;
+    padding: 30px 20px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -62,7 +72,7 @@ body {
   }
   
   .nav a.active {
-    background-color: #04AA6D;
+    background-color: #0056d6;
     color: white;
   }
   

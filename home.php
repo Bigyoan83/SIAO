@@ -15,17 +15,17 @@ session_start();
         <div class="body">
             <nav class="nav" id="topNav">
                 <div class="profile">
-                    <img src="images/SIAO.webp">
+                    <img class="imglogo" src="images/SIAO.webp">
                 </div>
                 <ul>
                     <div>
-                    <a href="#home" class="active">Accueil</a>
-                    <a href="Service/le_SIAO.php">Qui sommes nous ?</a>
-                    <a href="#contact">Contact</a>
-                    <a href="article/liste.php">Actualité</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                        <a href="#home" class="active">Accueil</a>
+                        <a href="Service/le_SIAO.php">Qui sommes nous ?</a>
+                        <a href="#contact">Contact</a>
+                        <a href="article/liste.php">Actualité</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                         <!-- Vérifiez si l'utilisateur est connecté -->
                         <?php if (isset($_SESSION['user_name'])): ?>
                             <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
