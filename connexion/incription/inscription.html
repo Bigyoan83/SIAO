@@ -1,48 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - SIAO 83</title>
-    <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../css/connexion.css">
-</head>
-<body>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../../style.css"/>
+        <link rel="stylesheet" href="../../css/connexion.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title> SIAO 83 </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    </head>
+    <body>
+        <div class="body">
+            <nav class="nav" id="topNav">
+                <div class="profile">
+                    <img src="../../images/SIAO.webp">
+                </div>
+                <ul>
+                    <div>
+                        <a href="../../home.php" class="active">Accueil</a>
+                        <a href="../../Service/le_SIAO.php">Qui sommes nous ?</a>
+                        <a href="#contact">Contact</a>
+                        <a href="../../actualites.php">Actualité</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <li class="bouton"><a href="../connexion.html">Se Connecter</a></li>
+                   </div>
+                </ul>    
+            </nav>
 
-    <nav>
-        <div class="profile">
-            <img src="../../images/SIAO.webp">
+            <div class="login-container">
+                <h2>S'inscrire</h2>
+                <form action="inscription.php" method="POST">
+                    <div class="input-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="mot_de_passe">Mot de passe</label>
+                        <input type="password" id="password" name="mot_de_passe" required>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit">Inscription</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <ul>
-            <li class="bouton"><a href="../../home.php">Accueil</a></li>
-            <li class="bouton"><a href="../../Service/Service.php">Nos Services</a></li>
-            <li class="bouton">Gouvernance</li>
-            <li class="bouton">Le SIAO</li>
-            <li class="bouton"><a href="../../actualites.php">Actualité</a></li>
-            <li class="bouton"><a href="../connexion.html">Se Connecter</a></li>
-        </ul>   
-    </nav>
-
-    <div class="login-container">
-        <h2>S'inscrire</h2>
-        <form action="inscription.php" method="POST">
-            <div class="input-group">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="mot_de_passe">Mot de passe</label>
-                <input type="password" id="password" name="mot_de_passe" required>
-            </div>
-            <div class="input-group">
-                <button type="submit">Inscription</button>
-            </div>
-        </form>
-    </div>
     <script src="/Scrip.js"></script>
 </body>
 </html>
