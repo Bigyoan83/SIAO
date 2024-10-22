@@ -32,16 +32,10 @@ html, body {
     padding: 0;
     font-family: 'DM Sans';
 }
-<<<<<<< Updated upstream
-.message-succes{
-}
-=======
-
 .login-container{
   background-color: #c3e6cb;
 }
 
->>>>>>> Stashed changes
 #body {
   margin: auto;
   width: 90%;
@@ -61,13 +55,16 @@ ul {
   margin: 0;
 }
 .imglogo {
-  width: 25%;
-  height: 40%;
+  width: 15%;
+  height: 30%;
 }
 
 .top {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  background-color: white;
+
 }
 
 .nav {
@@ -123,7 +120,7 @@ section {
 }
 
 .présentation {
-    margin: 30px;
+  padding-top: 10%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
