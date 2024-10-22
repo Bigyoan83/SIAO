@@ -10,44 +10,45 @@
     </head>
     <body>
         <div class="body">
-            <nav class="nav" id="topNav">
-                <div class="profile">
-                    <img src="../../images/SIAO.webp">
-                </div>
-                <ul>
-                    <div>
-                        <a href="../../home.php" class="active">Accueil</a>
-                        <a href="../../Service/le_SIAO.php">Qui sommes nous ?</a>
-                        <a href="#contact">Contact</a>
-                        <a href="../../actualites.php">Actualité</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                        <li class="bouton"><a href="../connexion.html">Se Connecter</a></li>
-                   </div>
-                </ul>    
-            </nav>
-
-            <div class="login-container">
-                <h2>S'inscrire</h2>
-                <form action="inscription.php" method="POST">
-                    <div class="input-group">
-                        <label for="nom">Nom</label>
-                        <input type="text" id="nom" name="nom" required>
+            <div class="top">
+                <img class="imglogo" src="../../images/SIAO.webp">
+                <nav class="nav" id="topNav">
+                    <ul>
+                        <div>
+                            <a href="../../home.php" class="active">Accueil</a>
+                            <a href="../../Service/le_SIAO.php">Qui sommes nous ?</a>
+                            <a href="#contact">Contact</a>
+                            <a href="../../actualites.php">Actualité</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
                     </div>
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="mot_de_passe">Mot de passe</label>
-                        <input type="password" id="password" name="mot_de_passe" required>
-                    </div>
-                    <div class="input-group">
-                        <button type="submit">Inscription</button>
-                    </div>
-                </form>
+                    </ul>    
+                </nav>
             </div>
+            <div class="container">
+                <div class="login-container">
+                    <h2>S'inscrire</h2>
+                    <form action="inscription.php" method="POST">
+                        <div class="input-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="mot_de_passe">Mot de passe</label>
+                            <input type="password" id="password" name="mot_de_passe" required>
+                        </div>
+                        <div class="input-group">
+                            <button type="submit">Inscription</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
         </div>
     <script src="/Scrip.js"></script>
 </body>

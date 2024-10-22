@@ -15,31 +15,31 @@ session_start();
     </head>
     <body>
         <div class="body">
-            <nav class="nav" id="topNav">
-                <div class="profile">
-                    <img src="images/SIAO.webp">
+            <div class="top">
+                    <img class="imglogo" src="images/SIAO.webp">
+                    <nav class="nav" id="topNav">   
+                        <ul>
+                            <div>
+                                <a href="home.php" class="active">Accueil</a>
+                                <a href="Service/le_SIAO.php">Qui sommes nous ?</a>
+                                <a href="#contact">Contact</a>
+                                <a href="actualites.php">Actualité</a>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                                <!-- Vérifiez si l'utilisateur est connecté -->
+                                <?php if (isset($_SESSION['user_name'])): ?>
+                                    <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
+                                    <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                                <?php else: ?>
+                                    <!-- Sinon, on affiche le bouton de connexion -->
+                                    <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
+                                <?php endif; ?>
+                            </div>
+                        </ul>  
+                    </nav>
                 </div>
-                <ul>
-                    <div>
-                        <a href="home.php" class="active">Accueil</a>
-                        <a href="Service/le_SIAO.php">Qui sommes nous ?</a>
-                        <a href="#contact">Contact</a>
-                        <a href="actualites.php">Actualité</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                        <!-- Vérifiez si l'utilisateur est connecté -->
-                        <?php if (isset($_SESSION['user_name'])): ?>
-                            <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                            <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
-                        <?php else: ?>
-                            <!-- Sinon, on affiche le bouton de connexion -->
-                            <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
-                        <?php endif; ?>
-                   </div>
-                </ul>    
-            </nav>
-            <div style="margin-top:5px; text-align: center; display :flex; justify-content :space-around; ">
+            <div style="margin-top:5px; text-align: center; display :flex; justify-content :space-around;  padding:10%;">
                 <?php
                     include('Connexion_BDD.php');
                                             
