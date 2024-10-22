@@ -30,7 +30,8 @@ html, body {
     padding: 0;
     font-family: 'DM Sans';
 }
-
+.message-succes{
+}
 #body {
   margin: auto;
   width: 90%;

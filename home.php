@@ -40,7 +40,7 @@ session_start();
 
             <!-- Affichage du message de succès -->
             <?php if (isset($_SESSION['success_message'])): ?>
-                <div class="message-succes">
+                <div style="margin: 0; border: 0;" class="message-succes">
                     <p><?php echo htmlspecialchars($_SESSION['success_message']); ?></p>
                 </div>
                 <?php
