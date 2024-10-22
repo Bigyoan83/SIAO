@@ -35,3 +35,10 @@ form{
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
+.ajout_article {
+    text-align: center; 
+    display :flex; 
+    justify-content :space-around;  
+}
+

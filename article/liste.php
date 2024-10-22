@@ -29,6 +29,7 @@ if (isset($_GET['id'])) {
                     <nav class="nav" id="topNav">   
                         <ul>
                             <div>
+                                <div></div>
                                 <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
                                 <a href="#contact">Contact</a>
                                 <a href="../actualites.php">Actualité</a>
@@ -38,18 +39,17 @@ if (isset($_GET['id'])) {
                                 <!-- Vérifiez si l'utilisateur est connecté -->
                                 <?php if (isset($_SESSION['user_name'])): ?>
                                     <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                                    <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                                    <a href="../connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
                                 <?php else: ?>
                                     <!-- Sinon, on affiche le bouton de connexion -->
-                                    <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
+                                    <a href="../connexion/connexion.html">Se Connecter/S'inscrire</a></li>
                                 <?php endif; ?>
                             </div>
                         </ul>  
                     </nav>
                 </div>
             </nav>
-
-            <div style="margin-top:5px; text-align: center; display: flex; justify-content: space-around;">
+            <div style="text-align: center; display :flex; justify-content :space-around;  padding:10%;">
                 <?php
                     include('../Connexion_BDD.php');
                             

@@ -17,50 +17,50 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
     </head>
     <body>
         <div class="body">
-        <div class="top">
-            <a class="imglogo" href="../home.php">
+            <div class="top">
+                <a class="imglogo" href="../home.php">
                 <img class="imglogo1" src="../images/SIAO.webp"></a>
-                    <nav class="nav" id="topNav">   
-                        <ul>
-                            <div>
-                                <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
-                                <a href="#contact">Contact</a>
-                                <a href="../actualites.php">Actualité</a>
-                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-                                <!-- Vérifiez si l'utilisateur est connecté -->
-                                <?php if (isset($_SESSION['user_name'])): ?>
-                                    <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                                    <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
-                                <?php else: ?>
-                                    <!-- Sinon, on affiche le bouton de connexion -->
-                                    <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
-                                <?php endif; ?>
-                            </div>
-                        </ul>  
-                    </nav>
-                </div>
-            </nav>
-            <div style="text-align: center;">
-            <section class="bienvenue">
-                <h2>Ajouter un nouvel article</h2>
-                <form action="ajout_article.php" method="POST">
-                    <div>
-                        <label class="label" for="titre">Titre de l'article :</label><br>
-                        <input type="text" class="titre" name="titre" required>
-                    </div>
-                    <div>
-                        <label class="label" for="accroche">Phrase d'accroche</label><br>
-                        <input class="accroche" type="text" name="accroche" rows="8" required></textarea>
-                    </div>
-                    <div>
-                        <label class="label" for="contenu">Contenu de l'article :</label><br>
-                        <textarea class="content" name="content" rows="8" required></textarea>
-                    </div>
-                    <button type="submit" class="bouton">Ajouter l'article</button>
-                </form>
-            </section>
+                <nav class="nav" id="topNav">   
+                    <ul>
+                        <div>
+                            <div></div>
+                            <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
+                            <a href="#contact">Contact</a>
+                            <a href="../actualites.php">Actualité</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <!-- Vérifiez si l'utilisateur est connecté -->
+                            <?php if (isset($_SESSION['user_name'])): ?>
+                                <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
+                                <a href="../connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                            <?php else: ?>
+                                <!-- Sinon, on affiche le bouton de connexion -->
+                                <a href="../connexion/connexion.html">Se Connecter/S'inscrire</a></li>
+                            <?php endif; ?>
+                        </div>
+                    </ul>  
+                </nav>
+            </div>
+            <div class="ajout_article">
+                <section class="bienvenue">
+                    <h2>Ajouter un nouvel article</h2>
+                    <form action="ajout_article.php" method="POST">
+                        <div>
+                            <label class="label" for="titre">Titre de l'article :</label><br>
+                            <input type="text" class="titre" name="titre" required>
+                        </div>
+                        <div>
+                            <label class="label" for="accroche">Phrase d'accroche</label><br>
+                            <input class="accroche" type="text" name="accroche" rows="8" required></textarea>
+                        </div>
+                        <div>
+                            <label class="label" for="contenu">Contenu de l'article :</label><br>
+                            <textarea class="content" name="content" rows="8" required></textarea>
+                        </div>
+                        <button type="submit" class="bouton">Ajouter l'article</button>
+                    </form>
+                </section>
             </div>
         </div>
         <script src="../Scrip.js"></script>

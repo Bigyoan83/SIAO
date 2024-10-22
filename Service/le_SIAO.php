@@ -19,6 +19,7 @@ session_start();
                     <nav class="nav" id="topNav">   
                         <ul>
                             <div>
+                                <div></div>
                                 <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
                                 <a href="#contact">Contact</a>
                                 <a href="../actualites.php">Actualité</a>

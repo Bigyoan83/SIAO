@@ -29,6 +29,7 @@ $user_name = $_SESSION['user_name'];
                 <nav class="nav" id="topNav">  
                     <ul>
                         <div>
+                            <div></div>
                             <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
                             <a href="#contact">Contact</a>
                             <a href="../actualites.php">Actualité</a>
@@ -37,10 +38,10 @@ $user_name = $_SESSION['user_name'];
                             <!-- Vérifiez si l'utilisateur est connecté -->
                             <?php if (isset($_SESSION['user_name'])): ?>
                                 <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                                <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                                <a href="profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
                             <?php else: ?>
                                 <!-- Sinon, on affiche le bouton de connexion -->
-                                <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
+                                <a href="connexion.html">Se Connecter/S'inscrire</a></li>
                             <?php endif; ?>
                         </div>
                     </ul>  
