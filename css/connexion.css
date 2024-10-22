@@ -1,13 +1,23 @@
 /* Styles spécifiques au formulaire de connexion uniquement */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
+
+@media screen and (max-width:600px) {
+    .login-container {width: 30%;}
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
 
 .login-container {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px;
+    padding: 40px ;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
-    margin: 100px auto;  /* Pour centrer le formulaire en dessous de la barre de navigation */
     text-align: center;
+    margin: 10%;
 }
 
 h2 {
