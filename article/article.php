@@ -8,7 +8,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/Service.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/article.css"/>
         <link rel="stylesheet" type="text/css" href="../style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title> SIAO 83 </title>
@@ -24,7 +24,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
                 <ul>
                     <div>
                         <a href="../home.php" class="active">Accueil</a>
-                        <a href="le_SIAO.php">Qui sommes nous ?</a>
+                        <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
                         <a href="#contact">Contact</a>
                         <a href="../actualites.php">Actualité</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -41,6 +41,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
                    </div>
                 </ul>    
             </nav>
+            <div style="text-align: center;">
             <section class="bienvenue">
                 <h2>Ajouter un nouvel article</h2>
                 <form action="ajout_article.php" method="POST">
@@ -59,6 +60,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
                     <button type="submit" class="bouton">Ajouter l'article</button>
                 </form>
             </section>
+            </div>
         </div>
     </body>
 </html>

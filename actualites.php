@@ -34,7 +34,7 @@ session_start();
                             <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
                         <?php else: ?>
                             <!-- Sinon, on affiche le bouton de connexion -->
-                            <a href="../connexion/connexion.html">Se Connecter/S'inscrire</a></li>
+                            <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
                         <?php endif; ?>
                    </div>
                 </ul>    
