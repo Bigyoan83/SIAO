@@ -32,16 +32,8 @@ html, body {
     padding: 0;
     font-family: 'DM Sans';
 }
-<<<<<<< Updated upstream
 .message-succes{
 }
-=======
-
-.login-container{
-  background-color: #c3e6cb;
-}
-
->>>>>>> Stashed changes
 #body {
   margin: auto;
   width: 90%;
