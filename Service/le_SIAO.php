@@ -14,11 +14,11 @@ session_start();
     <body>
         <div class="body">
             <div class="top">
-                    <img class="imglogo" src="../images/SIAO.webp">
+                <a class="imglogo" href="../home.php">
+                <img class="imglogo1" src="../images/SIAO.webp"></a>   
                     <nav class="nav" id="topNav">   
                         <ul>
                             <div>
-                                <a href="../home" class="active">Accueil</a>
                                 <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
                                 <a href="#contact">Contact</a>
                                 <a href="../actualites.php">Actualité</a>
@@ -109,8 +109,8 @@ session_start();
                     </div>
                 </div>
             </div>
-        </div> 
-                     
+        </div>           
         <script src="Service.js"></script>
+        <script src="../Scrip.js"></script>
     </body>
 </html>
