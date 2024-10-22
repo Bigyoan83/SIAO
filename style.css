@@ -58,8 +58,8 @@ ul {
 }
 
 .imglogo {
-  width: 15%;
-  height: 30%;
+  width: 14%;
+  height: 25%;
 }
 
 .top {
@@ -90,10 +90,11 @@ ul {
     padding: 30px 20px;
     text-decoration: none;
     font-size: 17px;
+    transition-duration: 0.4s;
   }
   
   .nav a:hover {
-    background-color: #ddd;
+    background-color: #79c0ff;
     color: black;
   }
   
