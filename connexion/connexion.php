@@ -5,7 +5,7 @@ include('../Connexion_BDD.php');
 $email = $_POST['email'];
 $password = $_POST['mot_de_passe'];
 
-$sql = $connexion->prepare("SELECT id, nom, mot_de_passe, email FROM utilisateur WHERE email = ?");
+$sql = $connexion->prepare("SELECT email, nom, mot_de_passe  FROM utilisateur WHERE email = ?");
 //Prépare une requête SQL. Cela signifie que la requête est écrite avec un emplacement réservé (?) pour éviter les injections SQL. Cela est plus sûr que d'insérer directement les variables dans la requête.
 $sql->bind_param("s", $email);
 //Associe la valeur de $email au ? dans la requête. Le "s" signifie que l'email est une chaîne de caractères (string).
