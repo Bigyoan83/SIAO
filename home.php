@@ -22,7 +22,7 @@ session_start();
                         <a href="#home" class="active">Accueil</a>
                         <a href="Service/le_SIAO.php">Qui sommes nous ?</a>
                         <a href="#contact">Contact</a>
-                        <a href="article/liste.php">Actualité</a>
+                        <a href="actualites.php">Actualité</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
