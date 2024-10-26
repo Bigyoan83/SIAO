@@ -24,10 +24,10 @@ if ($row) {
         header('Location: ../home.php'); // Redirection vers la page d'accueil après connexion
         exit();
     } else {
-        echo "Mot de passe incorrect";
+        header("Location: page_connexion.php?error=login_incorrect");
     }
 } else {
-    echo "Email ou mot de passe incorrect";
+    header("Location: page_connexion.php?error=login_incorrect");
 }
 
 $connexion->close();

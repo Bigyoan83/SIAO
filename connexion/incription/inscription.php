@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
 
     if ($stmt->execute() === TRUE) {
         // Redirection après succès
-        header("Location: ../connexion.html");
+        header("Location: ../page_connexion.php");
         exit();
     } else {
         echo "Erreur : " . $stmt->error;
