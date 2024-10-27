@@ -30,6 +30,7 @@ session_start();
                                 <?php if (isset($_SESSION['user_name'])): ?>
                                     <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
                                     <a href="../connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                                    <!-- htmlspecialchars pour éviter les injections XSS -->
                                 <?php else: ?>
                                     <!-- Sinon, on affiche le bouton de connexion -->
                                     <a href="../connexion/connexion.html">Se Connecter/S'inscrire</a></li>

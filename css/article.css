@@ -34,3 +34,20 @@ form{
     border: 1px solid #ccc;
 }
 
+
+.actu {
+    text-align: center; 
+    display :flex; 
+    justify-content :space-around;
+    flex-wrap: wrap; 
+    gap: 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: aliceblue;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+}

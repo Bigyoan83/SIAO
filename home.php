@@ -26,6 +26,7 @@ session_start();
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
+
                         <!-- Vérifiez si l'utilisateur est connecté -->
                         <?php if (isset($_SESSION['user_name'])): ?>
                             <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
@@ -34,20 +35,24 @@ session_start();
                             <!-- Sinon, on affiche le bouton de connexion -->
                             <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
                         <?php endif; ?>
+
                     </div>
                 </ul>  
             </nav>
        </div>
+
             <!-- Affichage du message de succès -->
             <?php if (isset($_SESSION['success_message'])): ?>
                 <div style="margin: 0; border: 0;" class="message-succes">
                     <p><?php echo htmlspecialchars($_SESSION['success_message']); ?></p>
+                    <!-- htmlspecialchars pour éviter les injections XSS -->
                 </div>
                 <?php
                 // Supprimer le message de succès après l'avoir affiché
                 unset($_SESSION['success_message']);
                 ?>
             <?php endif; ?>
+
             <div class="présentation">
                 <div class="accueil">
                     <section class="bienvenue">

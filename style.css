@@ -73,7 +73,6 @@ ul {
   position: fixed;
   background-color: white;
   width: 100%;
-
 }
 
 .mid {
@@ -127,31 +126,23 @@ section {
 
 .bienvenue {
     box-sizing: border-box;
-}
-
-.actu {
-    box-sizing: border-box;
+    padding: 15px;
 }
 
 .présentation {
-    padding-top: 10%;
+    padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.actu {
-    margin-top: 20px;
-    padding: 30px;
-    background-color: aliceblue;
-}
- .map {
+.map {
     display: flex;
     justify-content: center;
     margin: 100px;
 }
 
- #maps {
+#maps {
     border-radius: 10px;
 }
 

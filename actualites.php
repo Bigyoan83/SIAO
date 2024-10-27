@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 ?>
@@ -28,26 +27,27 @@ session_start();
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
+
                         <!-- Vérifiez si l'utilisateur est connecté -->
                         <?php if (isset($_SESSION['user_name'])): ?>
                             <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                            <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                            <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li> <!-- htmlspecialchars pour éviter les injections XSS -->
                         <?php else: ?>
                             <!-- Sinon, on affiche le bouton de connexion -->
                             <a href="connexion/connexion.html">Se Connecter/S'inscrire</a></li>
                         <?php endif; ?>
+
                     </div>
                 </ul>  
             </nav>
        </div>
         <div style="text-align: center; display :flex; justify-content :space-around;  padding:10%;">
+
             <?php
-                include('Connexion_BDD.php');
-                                            
+                include('Connexion_BDD.php');                         
                     $sql = $connexion->prepare("SELECT id, titre, accroche, content, nom, date_creation FROM article");
                     $sql->execute();
-                    $resultat = $sql->get_result();
-                                            
+                    $resultat = $sql->get_result();                       
                     if ($resultat->num_rows > 0) {
                         echo '<div style="display: flex; flex-wrap: wrap; gap: 20px;">'; // Conteneur flex pour les cartes
                         // Afficher les résultats sous forme de cartes
