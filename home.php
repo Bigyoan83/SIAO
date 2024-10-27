@@ -40,7 +40,7 @@ session_start();
                 </ul>  
             </nav>
        </div>
-
+        <div class="content">
             <!-- Affichage du message de succès -->
             <?php if (isset($_SESSION['success_message'])): ?>
                 <div style="margin: 0; border: 0;" class="message-succes">
@@ -69,5 +69,6 @@ session_start();
             </div>
         </div>
         <script src="Scrip.js"></script>
+        </div>
     </body>
 </html>
