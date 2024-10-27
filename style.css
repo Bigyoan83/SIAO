@@ -48,6 +48,10 @@ body {
   background-attachment: fixed; /* Fixe le fond pour qu'il ne se répète pas lors du scroll */
 }
 
+.content {
+  padding-top: 70px; /* Ajuste la valeur si nécessaire en fonction de la hauteur de ta barre de navigation */
+}
+
 ul {
   padding: 0;
   margin: 0;
