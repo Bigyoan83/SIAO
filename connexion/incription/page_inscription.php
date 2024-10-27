@@ -10,12 +10,13 @@
     </head>
     <body>
         <div class="body">
-               <a class="imglogo" href="../../home.php">
              <div class="top">
+                <a class="imglogo" href="../../home.php">
                     <img class="imglogo1" src="../../images/SIAO.webp"></a>
                 <nav class="nav" id="topNav">
                     <ul>
                         <div>
+                            <div></div>
                             <a href="../../Service/le_SIAO.php">Qui sommes nous ?</a>
                             <a href="#contact">Contact</a>
                             <a href="../../actualites.php">Actualité</a>
@@ -26,35 +27,36 @@
                     </ul>    
                 </nav>
             </div>
-            <div class="login-container">
-            <h2>S'inscrire</h2>
+            <div class="container">
+                <div class="login-container">
+                    <h2>S'inscrire</h2>
 
-            <?php
-            // Afficher un message d'erreur si l'email existe déjà
-            if (isset($_GET['error']) && $_GET['error'] == 'email_exists') {
-                echo '<p style="color: red; text-align: center;">Cet email est déjà utilisé. Veuillez en choisir un autre.</p>';
-            }
-            ?>
+                    <?php
+                    // Afficher un message d'erreur si l'email existe déjà
+                    if (isset($_GET['error']) && $_GET['error'] == 'email_exists') {
+                        echo '<p style="color: red; text-align: center;">Cet email est déjà utilisé. Veuillez en choisir un autre.</p>';
+                    }
+                    ?>
 
-            <form action="inscription.php" method="POST">
-                <div class="input-group">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="mot_de_passe">Mot de passe</label>
-                    <input type="password" id="password" name="mot_de_passe" required>
-                </div>
-                <div class="input-group">
-                    <button type="submit">Inscription</button>
-                </div>
-            </form>
-        </div>
-            
+                    <form action="inscription.php" method="POST">
+                        <div class="input-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="mot_de_passe">Mot de passe</label>
+                            <input type="password" id="password" name="mot_de_passe" required>
+                        </div>
+                        <div class="input-group">
+                            <button type="submit">Inscription</button>
+                        </div>
+                    </form>
+                </div>    
+            </div>  
         </div>
     <script src="../../Scrip.js"></script>
 </body>

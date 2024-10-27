@@ -12,7 +12,7 @@ $nom = $_SESSION['user_name'];
 $sql = "INSERT INTO article (titre,accroche, content,id) VALUES ('$titre', '$accroche', '$content','$id')";
 if ($connexion->query($sql) === TRUE) {
     echo "New record created successfully";
-    header('Location: http://localhost/SIAO/article/article.php');
+    header('Location: http://localhost/SIAO/article/ajouter_un_article.php');
 } else {
     echo "Error: " . $sql . "<br>" . $connexion->error;
 }

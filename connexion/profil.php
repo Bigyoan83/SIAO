@@ -62,7 +62,7 @@ $user_name = $_SESSION['user_name'];
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Article</a>
                         <div class="dropdown-content">
-                            <a href="../article/article.php">Ajouter un article</a>
+                            <a href="../article/ajouter_un_article.php">Ajouter un article</a>
                             <a href="../article/liste.php">Liste des articles créés</a>
                         </div>
                     </li>

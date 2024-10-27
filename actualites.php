@@ -15,49 +15,48 @@ session_start();
     <body>
         <div class="body">
             <div class="top">
-            <a class="imglogo" href="home.php">
-                <img class="imglogo1" src="images/SIAO.webp"></a> 
-            <nav class="nav" id="topNav">   
-                <ul>
-                    <div>
-                        <div></div>
-                        <a href="Service/le_SIAO.php">Qui sommes nous ?</a>
-                        <a href="#contact">Contact</a>
-                        <a href="actualites.php">Actualité</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
+                <a class="imglogo" href="home.php">
+                    <img class="imglogo1" src="images/SIAO.webp"></a> 
+                <nav class="nav" id="topNav">   
+                    <ul>
+                        <div>
+                            <div></div>
+                            <a href="Service/le_SIAO.php">Qui sommes nous ?</a>
+                            <a href="#contact">Contact</a>
+                            <a href="actualites.php">Actualité</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
 
-                        <!-- Vérifiez si l'utilisateur est connecté -->
-                        <?php if (isset($_SESSION['user_name'])): ?>
-                            <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                            <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li> <!-- htmlspecialchars pour éviter les injections XSS -->
-                        <?php else: ?>
-                            <!-- Sinon, on affiche le bouton de connexion -->
-                            <a href="connexion/page_connexion.php">Se Connecter/S'inscrire</a></li>
-                        <?php endif; ?>
+                            <!-- Vérifiez si l'utilisateur est connecté -->
+                            <?php if (isset($_SESSION['user_name'])): ?>
+                                <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
+                                <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li> <!-- htmlspecialchars pour éviter les injections XSS -->
+                            <?php else: ?>
+                                <!-- Sinon, on affiche le bouton de connexion -->
+                                <a href="connexion/page_connexion.php">Se Connecter/S'inscrire</a></li>
+                            <?php endif; ?>
 
-                    </div>
-                </ul>  
-            </nav>
-       </div>
-        <div style="text-align: center; display :flex; justify-content :space-around;  padding:10%;">
+                        </div>
+                    </ul>  
+                </nav>
+            </div>
 
-            <?php
-                include('Connexion_BDD.php');                         
+            <div class="actu">
+                <?php
+                    include('Connexion_BDD.php');                         
                     $sql = $connexion->prepare("SELECT id, titre, accroche, content, nom, date_creation FROM article");
                     $sql->execute();
                     $resultat = $sql->get_result();                       
                     if ($resultat->num_rows > 0) {
-                        echo '<div style="display: flex; flex-wrap: wrap; gap: 20px;">'; // Conteneur flex pour les cartes
-                        // Afficher les résultats sous forme de cartes
+                        echo '<div class="article-container">';
                         while ($row = $resultat->fetch_assoc()) {
                             echo '
-                            <div style="border: 1px solid black ; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-                                <h2 style="font-size: 20px; color: #333;">' . htmlspecialchars($row["titre"]) . '</h2>
-                                <h3 style="font-size: 20px; color: #333;">' . htmlspecialchars($row["accroche"]) . '</h3>
-                                <p style="color: #888; font-size: 12px;">Publié par ' . htmlspecialchars($row["nom"]) . ' le ' . htmlspecialchars($row["date_creation"]) . '</p>
-                                <a href="article.php?id=' . $row["id"] . '" style="text-decoration: none; color: #0066cc; font-weight: bold;">Lire plus</a>
+                            <div class="article-card">
+                                <h2 class="article-title">' . htmlspecialchars($row["titre"]) . '</h2>
+                                <h3 class="article-subtitle">' . htmlspecialchars($row["accroche"]) . '</h3>
+                                <p class="article-author">Publié par ' . htmlspecialchars($row["nom"]) . ' le ' . htmlspecialchars($row["date_creation"]) . '</p>
+                                <a href="article/lire_plus.php?id=' . $row["id"] . '" class="article-link">Lire plus</a>
                             </div>';
                         }
                         echo '</div>';

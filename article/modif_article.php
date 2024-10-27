@@ -52,17 +52,17 @@ if (isset($_POST['update'])) {
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    <h1>Modifier l'Article</h1>
+    <div class="modif">
+        <form method="post">
+            <label for="titre">Titre de l'article :</label><br>
+            <input type="text" id="titre" name="titre" value="<?php echo htmlspecialchars($article['titre']); ?>" required><br><br>
 
-<h1>Modifier l'Article</h1>
-<form method="post">
-    <label for="titre">Titre de l'article :</label><br>
-    <input type="text" id="titre" name="titre" value="<?php echo htmlspecialchars($article['titre']); ?>" required><br><br>
+            <label for="content">Contenu de l'article :</label><br>
+            <textarea id="content" name="content" rows="10" cols="50" required><?php echo htmlspecialchars($article['content']); ?></textarea><br><br>
 
-    <label for="content">Contenu de l'article :</label><br>
-    <textarea id="content" name="content" rows="10" cols="50" required><?php echo htmlspecialchars($article['content']); ?></textarea><br><br>
-
-    <button type="submit" name="update">Mettre à jour</button>
-</form>
-
+            <button type="submit" name="update">Mettre à jour</button>
+        </form>
+    </div>
 </body>
 </html>

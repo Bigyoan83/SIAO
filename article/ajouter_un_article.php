@@ -8,7 +8,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/article.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/article_admin.css"/>
         <link rel="stylesheet" type="text/css" href="../style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title> SIAO 83 </title>
@@ -19,7 +19,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
         <div class="body">
             <div class="top">
                 <a class="imglogo" href="../home.php">
-                <img class="imglogo1" src="../images/SIAO.webp"></a>
+                    <img class="imglogo1" src="../images/SIAO.webp"></a>
                 <nav class="nav" id="topNav">   
                     <ul>
                         <div>
