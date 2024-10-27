@@ -3,7 +3,7 @@ session_start();
 include('../Connexion_BDD.php');
 
 if (!isset($_SESSION['user_name'])) {
-    header('Location: http://localhost/SIAO/connexion/connexion.html');
+    header('Location: http://localhost/SIAO/connexion/page_connexion.php');
     exit();
 }
 
@@ -41,7 +41,7 @@ $user_name = $_SESSION['user_name'];
                                 <a href="profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
                             <?php else: ?>
                                 <!-- Sinon, on affiche le bouton de connexion -->
-                                <a href="connexion.html">Se Connecter/S'inscrire</a></li>
+                                <a href="page_connexion.php">Se Connecter/S'inscrire</a></li>
                             <?php endif; ?>
                         </div>
                     </ul>  
