@@ -13,7 +13,7 @@ $sql = $connexion->prepare("INSERT INTO article (titre, accroche, content, nom) 
 $sql->bind_param("ssss", $titre, $accroche, $content, $nom);
 
 //Associe la valeur de $email au ? dans la requête. Le "s" signifie que l'email est une chaîne de caractères (string).
-$sql->execute();
+
 
 if ($sql->execute() === TRUE) {
     echo "New record created successfully";
