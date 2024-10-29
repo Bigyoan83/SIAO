@@ -52,6 +52,7 @@ form{
     display: flex;
     justify-content: space-around;
     padding: 150px;
+    
 }
 
 .article-cards {
@@ -94,6 +95,7 @@ form{
     width: 30px;
     height: 30px;
     margin-right: 5px;
+    margin-top: 15px;
 }
 
 .ajout_article {

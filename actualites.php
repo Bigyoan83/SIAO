@@ -51,6 +51,7 @@ if (isset($_GET['id'])) {
                     </ul>  
                 </nav>
             </div>
+<<<<<<< Updated upstream
             
             <div class="act">
                 <?php 
@@ -74,21 +75,41 @@ if (isset($_GET['id'])) {
                                     <p class="article-author">Publié par ' . htmlspecialchars($row["nom"]) . ' le ' . htmlspecialchars($row["date_creation"]) . '</p>
                                     <a href="article/lire_plus.php?id=' . $row["id"] . '" class="article-link">Lire plus</a>
                                 </div>';
+=======
+
+            <div class="actu">
+                <?php
+                    include('Connexion_BDD.php');                         
+                    $sql = $connexion->prepare("SELECT id, titre, accroche, content, nom, date_creation FROM article");
+                    $sql->execute();
+                    $resultat = $sql->get_result();                       
+                    if ($resultat->num_rows > 0) {
+                        echo '<div class="article-container">';
+                        while ($row = $resultat->fetch_assoc()) {
+                            echo '
+                            <div class="article-card">
+                                <h2 class="article-title">' . htmlspecialchars($row["titre"]) . '</h2>
+                                <h3 class="article-subtitle">' . htmlspecialchars($row["accroche"]) . '</h3>
+                                <p class="article-author">Publié par ' . htmlspecialchars($row["nom"]) . ' le ' . htmlspecialchars($row["date_creation"]) . '</p>
+                                <a href="article/lire_plus.php?id=' . $row["id"] . '" class="article-link">Lire plus</a>'; 
+>>>>>>> Stashed changes
                                 if (isset($_SESSION['user_name']) && $_SESSION['email']=='admin@gmail.com') {
                                     echo '
                                     <div class="article-icons">
                                         <a href="article/modif_article.php?id=' . $row["id"] . '">
-                                            <img src="images/modif.png" class="icon">
-                                        </a>
+                                            <img src="images/modif.png" class="icon"></a>
                                         <a href="actualites.php?id=' . $row["id"] . '">
-                                            <img src="images/supprimer.png" class="icon">
-                                        </a>
+                                            <img src="images/supprimer.png" class="icon"></a>
                                     </div>';
                                 }
+<<<<<<< Updated upstream
                             }
                             echo '</div>';
                         } else {
                             echo "Aucun article trouvé.";
+=======
+                            '</div>';
+>>>>>>> Stashed changes
                         }
                     ?>
                 </div>
