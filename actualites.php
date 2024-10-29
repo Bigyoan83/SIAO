@@ -1,11 +1,22 @@
 <?php
 session_start();
+include('article/supprimer_article.php');
+
+// Suppression d'un article si l'ID est fourni
+if (isset($_GET['id'])) {
+    $del = $_GET['id'];
+    $sql = $connexion->prepare("DELETE FROM article WHERE id = ?");
+    $sql->bind_param("i", $del); //Lier la variable article_id à la requête SQL, en indiquant qu'il s'agit d'un entier (i).
+    $sql->execute();
+}
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/article.css"/>
+        <link rel="stylesheet" type="text/css" href="css/article_admin.css"/>
+
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title> SIAO 83 </title>
@@ -23,7 +34,7 @@ session_start();
                             <div></div>
                             <a href="Service/gouvernance.php">Gouvernance</a>
                             <a href="#contact">Contact</a>
-                            <a href="actualites.php">Actualité</a>
+                            <a href="actualites.php" class="page">Actualité</a>
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                                 <i class="fa fa-bars"></i>
                             </a>
@@ -58,6 +69,17 @@ session_start();
                                 <p class="article-author">Publié par ' . htmlspecialchars($row["nom"]) . ' le ' . htmlspecialchars($row["date_creation"]) . '</p>
                                 <a href="article/lire_plus.php?id=' . $row["id"] . '" class="article-link">Lire plus</a>
                             </div>';
+                                if (isset($_SESSION['user_name']) && $_SESSION['email']=='admin@gmail.com') {
+                                    echo '
+                                    <div class="article-icons">
+                                        <a href="article/modif_article.php?id=' . $row["id"] . '">
+                                            <img src="images/modif.png" class="icon">
+                                        </a>
+                                        <a href="actualites.php?id=' . $row["id"] . '">
+                                            <img src="images/supprimer.png" class="icon">
+                                        </a>
+                                    </div>';
+                            }
                         }
                         echo '</div>';
                     } else {

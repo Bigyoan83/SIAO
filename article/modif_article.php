@@ -35,7 +35,7 @@ if (isset($_POST['update'])) {
 
     if ($sql_update->execute()) {
         echo "L'article a été mis à jour avec succès.";
-        header("Location: liste.php"); // Rediriger vers la liste des articles après mise à jour
+        header("Location: ../actualites.php"); // Rediriger vers la liste des articles après mise à jour
         exit();
     } else {
         echo "Erreur lors de la mise à jour de l'article.";

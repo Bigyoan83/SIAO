@@ -20,7 +20,7 @@ session_start();
                     <ul>
                         <div>
                             <div></div>
-                            <a href="../Service/gouvernance.php">Gouvernance</a>                                
+                            <a href="../Service/gouvernance.php" class="page">Gouvernance</a>                                
                             <a href="#contact">Contact</a>
                             <a href="../actualites.php">Actualité</a>
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
