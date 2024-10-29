@@ -43,7 +43,7 @@ if (isset($_GET['id'])) {
                     <img class="imglogo1" src="../images/SIAO.webp"></a>
                 <nav class="nav" id="topNav">
                     <ul>
-                        <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
+                        <a href="../Service/gouvernance.php">Gouvernance</a>
                         <a href="#contact">Contact</a>
                         <a href="../actualites.php">Actualité</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">

@@ -30,7 +30,7 @@ $user_name = $_SESSION['user_name'];
                     <ul>
                         <div>
                             <div></div>
-                            <a href="../Service/le_SIAO.php">Qui sommes nous ?</a>
+                            <a href="../Service/gouvernance.php">Gouvernance</a>
                             <a href="#contact">Contact</a>
                             <a href="../actualites.php">Actualité</a>
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">                                    <i class="fa fa-bars"></i>
