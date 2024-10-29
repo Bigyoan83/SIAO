@@ -38,13 +38,15 @@ form{
     display: flex;
     justify-content: space-around;
 }
-
+.act{
+    padding: 15px;
+    padding-top: 150px; 
+}
 .actu {
     text-align: center;
     display: flex;
     justify-content: space-around;
-    padding: 15px;
-    padding-top: 150px; 
+    
 }
 
 .article-container {
