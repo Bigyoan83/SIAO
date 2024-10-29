@@ -47,6 +47,7 @@ $user_name = $_SESSION['user_name'];
                     </ul>  
                 </nav>
             </div>
+            <center>
             <div class="mid">
                 <h1>Bienvenue sur votre profil, 
                     <?php echo htmlspecialchars($user_name); // htmlspecialchars pour éviter les injections XSS
@@ -68,6 +69,7 @@ $user_name = $_SESSION['user_name'];
                     </li>
                 </div>                
             </div>
+            </center>
         </div>
         <script src="../Scrip.js"></script>
     </body>
