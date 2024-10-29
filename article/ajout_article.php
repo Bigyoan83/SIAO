@@ -8,9 +8,14 @@ $titre = $_POST['titre'];
 $accroche = $_POST['accroche'];
 $nom = $_SESSION['user_name'];
 
+$sql = $connexion->prepare("INSERT INTO article (titre, accroche, content, nom) VALUES (?,?,?,?)");
+//Prépare une requête SQL. Cela signifie que la requête est écrite avec un emplacement réservé (?) pour éviter les injections SQL. Cela est plus sûr que d'insérer directement les variables dans la requête.
+$sql->bind_param("ssss", $titre, $accroche, $content, $nom);
 
-$sql = "INSERT INTO article (titre,accroche, content,id) VALUES ('$titre', '$accroche', '$content','$id')";
-if ($connexion->query($sql) === TRUE) {
+//Associe la valeur de $email au ? dans la requête. Le "s" signifie que l'email est une chaîne de caractères (string).
+$sql->execute();
+
+if ($sql->execute() === TRUE) {
     echo "New record created successfully";
     header('Location: http://localhost/SIAO/article/ajouter_un_article.php');
 } else {

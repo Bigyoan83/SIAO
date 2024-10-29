@@ -69,7 +69,7 @@ $user_name = $_SESSION['user_name'];
                     </li>
                 </div>                
             </div>
-            </center>
+            
         </div>
         <script src="../Scrip.js"></script>
     </body>
