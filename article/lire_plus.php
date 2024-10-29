@@ -28,8 +28,9 @@ if (isset($_GET['id'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../css/article.css"/>
         <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/article.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>
             <?php echo htmlspecialchars($article['titre']); ?> - SIAO 83
         </title>
@@ -43,17 +44,20 @@ if (isset($_GET['id'])) {
                     <img class="imglogo1" src="../images/SIAO.webp"></a>
                 <nav class="nav" id="topNav">
                     <ul>
-                        <a href="../Service/gouvernance.php">Gouvernance</a>
-                        <a href="#contact">Contact</a>
-                        <a href="../actualites.php">Actualité</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                        </a>
-                        <?php if (isset($_SESSION['user_name'])): ?>
-                            <a href="../connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a>
-                        <?php else: ?>
-                            <a href="../connexion/connexion.php">Se Connecter/S'inscrire</a>
-                        <?php endif; ?>
+                        <div>
+                            <div></div>
+                            <a href="../Service/gouvernance.php">Gouvernance</a>
+                            <a href="#contact">Contact</a>
+                            <a href="../actualites.php">Actualité</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <?php if (isset($_SESSION['user_name'])): ?>
+                                <a href="../connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a>
+                            <?php else: ?>
+                                <a href="../connexion/connexion.php">Se Connecter/S'inscrire</a>
+                            <?php endif; ?>
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -66,6 +70,7 @@ if (isset($_GET['id'])) {
                 </div>
             </div>
         </div>
+        <script src="../Scrip.js"></script>    
     </body>
 </html>
 

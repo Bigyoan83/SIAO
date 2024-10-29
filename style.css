@@ -58,8 +58,8 @@ ul {
 }
 
 .imglogo {
-  width: 14%;
-  height: 34%;
+  width: 200px;
+  height: 70px;
 }
 
 .imglogo1 {
@@ -72,6 +72,7 @@ ul {
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  background-color: white;
  
 }
 
@@ -126,10 +127,14 @@ section {
 }
 
 .présentation {
-  padding-top: 150px;
+  padding-top: 100px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.bienvenue {
+  padding: 15px;
 }
 
 .map {
@@ -155,3 +160,19 @@ section {
 .modif {
   padding: 15px;
 }
+
+/*Gouvernance*/
+
+.titre-contenu-gouvernance {
+  padding-top: 150px ;
+  text-align: center;
+}
+
+.contenu-gournance {
+  margin: 15px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+
