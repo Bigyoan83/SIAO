@@ -57,19 +57,9 @@ $user_name = $_SESSION['user_name'];
 
                 <div class="déconnexion">
                     <a href="logout.php">Déconnexion</a>
-                </div>
-
-                <div class="menuderoulant">
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">Article</a>
-                        <div class="dropdown-content">
-                            <a href="../article/ajouter_un_article.php">Ajouter un article</a>
-                            <a href="../article/liste.php">Liste des articles créés</a>
-                        </div>
-                    </li>
-                </div>                
+                </div>             
             </div>
-            
+            </center>
         </div>
         <script src="../Scrip.js"></script>
     </body>
