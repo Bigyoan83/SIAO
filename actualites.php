@@ -32,8 +32,11 @@ if (isset($_GET['id'])) {
                         <div>
                             <div></div>
                             <a href="Service/gouvernance.php">Gouvernance</a>
-                            <a href="#contact">Contact</a>
-                            <a href="actualites.php" class="page">Actualité</a>
+                            <a href="#equipe">Equipe SIAO</a>
+                            <a href="actualites.php">Actualité</a>
+                            <a href="#activité">Pôle d'activités</a>
+                            <a href="#ressource">Ressources</a>
+                            <a href="#agenda">Agenda</a>
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                                 <i class="fa fa-bars"></i>
                             </a>

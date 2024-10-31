@@ -21,8 +21,11 @@ session_start();
                     <div>
                         <div></div>
                         <a href="Service/gouvernance.php">Gouvernance</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#equipe">Equipe SIAO</a>
                         <a href="actualites.php">Actualité</a>
+                        <a href="#activité">Pôle d'activités</a>
+                        <a href="#ressource">Ressources</a>
+                        <a href="#agenda">Agenda</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
@@ -57,12 +60,18 @@ session_start();
                 <div class="accueil">
                     <section class="bienvenue">
                         <h2>
-                            Bienvenue au SIAO / 115 du Var
+                            Le SIAO 115 <br>
+                            Service intégré d’accueil et d’orientation                        
                         </h2>
-                        <p>Nous sommes heureux de vous accueillir sur notre site dédié aux usagers et aux professionnels.<br>
-                        Il rassemble toutes les informations utiles à l'accueil et l'orientation <br> des personnes en situation de précarité en besoin d'un hébergement ou en démarche d'insertion par le logement.</p>
+                        <p>
+                            Le SIAO constitue un élément structurant du service public de la rue au logement
+                        </p>
                     </section>
                 </div>
+            </div>
+            <div class="site_externe">
+                <a href="https://www.itinova.org/"><button>Itinova</button></a>
+                <a href="https://soliguide.fr/fr"><button>Soliguide</button></a>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.9782952425126!2d6.758187475365137!3d43.429632966863046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97f07281724b%3A0x87d23ffec9c62660!2sSIAO-115%20du%20VAR!5e1!3m2!1sfr!2sfr!4v1725000504505!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>

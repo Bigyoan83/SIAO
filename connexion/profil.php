@@ -30,10 +30,14 @@ $user_name = $_SESSION['user_name'];
                     <ul>
                         <div>
                             <div></div>
-                            <a href="../Service/gouvernance.php">Gouvernance</a>
-                            <a href="#contact">Contact</a>
-                            <a href="../actualites.php">Actualité</a>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">                                    <i class="fa fa-bars"></i>
+                            <a href="Service/gouvernance.php">Gouvernance</a>
+                            <a href="#equipe">Equipe SIAO</a>
+                            <a href="actualites.php">Actualité</a>
+                            <a href="#activité">Pôle d'activités</a>
+                            <a href="#ressource">Ressources</a>
+                            <a href="#agenda">Agenda</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
                             </a>
                             <!-- Vérifiez si l'utilisateur est connecté -->
                             <?php if (isset($_SESSION['user_name'])): ?>

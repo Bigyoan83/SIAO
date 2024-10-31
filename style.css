@@ -161,6 +161,16 @@ section {
   padding: 15px;
 }
 
+.site_externe {
+  text-align: center;
+}
+
+button {
+  padding: 8px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 /*Gouvernance*/
 
 .titre-contenu-gouvernance {
