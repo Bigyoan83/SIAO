@@ -44,25 +44,27 @@ if (isset($_POST['update'])) {
 ?>
 
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifier l'Article</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <h1>Modifier l'Article</h1>
-    <div class="modif">
-        <form method="post">
-            <label for="titre">Titre de l'article :</label><br>
-            <input type="text" id="titre" name="titre" value="<?php echo htmlspecialchars($article['titre']); ?>" required><br><br>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modifier l'Article</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <center>
+            <h1>Modifier l'Article</h1>
+            <div class="modif">
+                <form method="post">
+                    <label for="titre">Titre de l'article :</label><br>
+                    <input type="text" id="titre" name="titre" value="<?php echo htmlspecialchars($article['titre']); ?>" required><br><br>
 
-            <label for="content">Contenu de l'article :</label><br>
-            <textarea id="content" name="content" rows="10" cols="50" required><?php echo htmlspecialchars($article['content']); ?></textarea><br><br>
+                    <label for="content">Contenu de l'article :</label><br>
+                    <textarea id="content" name="content" rows="10" cols="50" required><?php echo htmlspecialchars($article['content']); ?></textarea><br><br>
 
-            <button type="submit" name="update">Mettre à jour</button>
-        </form>
-    </div>
-</body>
+                    <button type="submit" name="update">Mettre à jour</button>
+                </form>
+            </div>
+        </center>
+    </body>
 </html>
