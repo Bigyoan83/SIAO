@@ -2,7 +2,7 @@
 //permet de se connecter a la bdd
 $serveur = "localhost";
 $utilisateur = "root";
-$motDePasse = "toor";
+$motDePasse = "root";
 $nomBaseDeDonnees = "mon_site_web";
 
 $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $nomBaseDeDonnees);
