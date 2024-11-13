@@ -21,7 +21,7 @@ if ($row) {
         $_SESSION['email'] = $row['email'];
         $_SESSION['success_message'] = "Connexion réussie, bienvenue " . $row['nom'] . " !";
         echo '<div class="tenor-gif-embed" data-postid="18272777" data-share-method="host" data-aspect-ratio="1.61616" data-width="100%"><a href="https://tenor.com/view/loading-complete-gif-18272777">Loading Complete GIF</a>from <a href="https://tenor.com/search/loading-gifs">Loading GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>';
-        header('Refresh:7; URL=../home.php'); // Redirection vers la page d'accueil après connexion
+        header('Refresh:8; URL=../home.php'); // Redirection vers la page d'accueil après connexion
         exit();
         } else {
         header("Location: page_connexion.php?error=login_incorrect");
