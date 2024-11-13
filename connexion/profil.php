@@ -42,7 +42,7 @@ $user_name = $_SESSION['user_name'];
                             <!-- Vérifiez si l'utilisateur est connecté -->
                             <?php if (isset($_SESSION['user_name'])): ?>
                                 <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                                <a href="profil.php" class="page">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                                <a href="profil.php" class="page" style="background-color: #79c0ff;">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
                             <?php else: ?>
                                 <!-- Sinon, on affiche le bouton de connexion -->
                                 <a href="page_connexion.php">Se Connecter/S'inscrire</a></li>

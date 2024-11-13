@@ -164,12 +164,18 @@ section {
 
 .site_externe {
   text-align: center;
+  align-items: center;
 }
 
-button {
-  padding: 8px;
-  margin: 10px;
+.redir {
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  margin: 30px;
+  border: 0px;
   border-radius: 10px;
+  background-color: #013e9a;
 }
 
 /*Gouvernance*/
