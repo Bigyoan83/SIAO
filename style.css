@@ -176,6 +176,7 @@ section {
   border: 0px;
   border-radius: 10px;
   background-color: #013e9a;
+  cursor: pointer;
 }
 
 /*Gouvernance*/
@@ -229,6 +230,8 @@ section {
   border-radius: 5px;
   font-size: 1em;
   line-height: 1.6;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 p {

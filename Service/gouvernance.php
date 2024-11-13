@@ -22,7 +22,7 @@ session_start();
                             <div></div>
                             <a href="/Service/gouvernance.php" style= "background-color : #79c0ff" >Gouvernance</a>
                             <a href="#equipe">Equipe SIAO</a>
-                            <a href="actualites.php">Actualité</a>
+                            <a href="../actualites.php">Actualité</a>
                             <a href="#activité">Pôle d'activités</a>
                             <a href="#ressource">Ressources</a>
                             <a href="#agenda">Agenda</a>
@@ -57,6 +57,9 @@ session_start();
                     <div class="paragraphe">
                         <p>Les collectivités territoriales , les acteurs du champ de la santé , de l’emploi , les représentants des résidences sociales ,les bailleurs sociaux sont partie prenante  de cette gouvernance, disposant  de  compétences,de ressources et de leviers utiles et importants ; Le Comité stratégique partenarial permet de discuter collectivement de la stratégie pour la résorption du sans-abrismeou du mal logement sur le territoire, et surtout de sa mise en œuvre où chacun doit être impliqué et jouer son rôle.</p>
                     </div>
+                </div>
+                <div class="paragraphe">
+                    <p>Le CSP permet au SIAO d’être doté d’un pilotage qui traduit l’articulation des politiques publiques entre elles et la responsabilité partagée de la gouvernance du SIAO est une co-responsabilité </p>
                 </div> 
             </div>
         </div>
