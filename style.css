@@ -43,13 +43,13 @@ html, body {
 
 body {
   background: rgb(255, 255, 255);
-  min-height: 100%; /* Garantit que le body occupe au moins toute la hauteur */
+  min-height: 100%; 
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Fixe le fond pour qu'il ne se répète pas lors du scroll */
+  background-attachment: fixed; 
 }
 
 .content {
-  padding-top: 70px; /* Ajuste la valeur si nécessaire en fonction de la hauteur de ta barre de navigation */
+  padding-top: 70px;
 }
 
 ul {
@@ -61,7 +61,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px; /* Ajustez le padding selon vos besoins */
+  padding: 10px 20px;
+  background-color: #e3ebf0;
 }
 
 .imglogo {
@@ -69,9 +70,8 @@ ul {
   align-items: center;
 }
 
-/* Logo taille fixe pour s'assurer qu'il reste constant */
 .imglogo1 {
-  width: 80px;
+  width: 200px;
   height: auto;
 }
 
@@ -101,6 +101,7 @@ ul {
 .nav a:hover {
   background-color: #79c0ff;
   color: black;
+  border-radius: 10px;
 }
 
 .nav a.active {
@@ -126,7 +127,6 @@ section {
 }
 
 .présentation {
-  padding-top: 100px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

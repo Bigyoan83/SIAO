@@ -22,7 +22,7 @@ session_start();
                     <ul>
                         <div>
                             <div></div>
-                            <a href="/Service/gouvernance.php" style= "background-color : #79c0ff" >Gouvernance</a>
+                            <a href="/Service/gouvernance.php" style= "background-color : #79c0ff; border-radius: 10px;">Gouvernance</a>
                             <a href="#equipe">Equipe SIAO</a>
                             <a href="../actualites.php">Actualité</a>
                             <a href="#activité">Pôle d'activités</a>
