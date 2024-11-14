@@ -8,15 +8,6 @@ form{
     font-size: 1.2rem;
 }
 
-.titre{
-    width: 300px; 
-    height: 30px; 
-    font-size: 1rem; 
-    padding: 5px; 
-    border-radius: 5px; 
-    border: 1px solid #ccc;
-}
-
 .content{
     width: 300px; 
     font-size: 1rem; 
@@ -34,36 +25,46 @@ form{
     border: 1px solid #ccc;
 }
 
+.titre {
+    text-align: center;
+}
+
+.phrase_intro {
+    padding-left: 50px;
+    border-left: 4px solid #0056b3;
+    margin-left: 20%;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size:large
+}
+
 .body {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
 }
-.act{
-    padding: 15px;
-    padding-top: 150px; 
-}
+
 .actu {
     text-align: center;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
 .article-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    flex-direction: column;
+    margin: 20px 150px;
 }
 
 .article-card {
-    border: 1px solid black;
-    padding: 20px;
+    flex: 1 1 45%;
+    background-color: #c7cdd6;
     border-radius: 10px;
-    width: 300px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    margin: 15px;
 }
-
 .article-title {
     font-size: 20px;
     color: #333;

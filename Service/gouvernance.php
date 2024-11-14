@@ -6,6 +6,7 @@ session_start();
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/gouvernance.css"/>
         <link rel="stylesheet" type="text/css" href="/Service/gouvernance.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title> SIAO 83 </title>
@@ -43,15 +44,17 @@ session_start();
                     </ul>  
                 </nav>
             </div>
-            <div class="titre-contenu-gouvernance">
-                <p>Les SIAO sont essentiellement financés par les services <br> de l'Etat chargés de la cohésion sociale.</p>
-            </div>
-            <div class="intro-gouvernance">
-                <p>Opérateur de service public, le SIAO met en œuvre les orientations et décisions de l’Etat </p>
+            <div class="conteneur_titre">
+                <div class="titre-contenu-gouvernance">
+                    <p>Les SIAO sont essentiellement financés par les services <br> de l'Etat chargés de la cohésion sociale.</p>
+                </div>
             </div>
             <div class="pack_1">
                 <div class="image_gourvernance"></div>
                 <div class="contenu-gournance">
+                    <div class="intro-gouvernance">
+                        <p>Opérateur de service public, le SIAO met en œuvre les orientations et décisions de l’Etat </p>
+                    </div>
                     <div class="paragraphe">
                         <p>Une nouvelle gouvernance territoriale des SIAO est assurée au travers d’un Comité stratégique partenarial.Sous la présidence du préfet de département, cette instance associe l’ensemble des acteurs intervenant dans les parcours d’accès au logement,à l’hébergement et à l’accompagnement des personnes sans domicile ou mal logées </p>
                     </div>

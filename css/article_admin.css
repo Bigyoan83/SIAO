@@ -8,15 +8,6 @@ form{
     font-size: 1.2rem;
 }
 
-.titre{
-    width: 300px; 
-    height: 30px; 
-    font-size: 1rem; 
-    padding: 5px; 
-    border-radius: 5px; 
-    border: 1px solid #ccc;
-}
-
 .content{
     width: 300px; 
     font-size: 1rem; 

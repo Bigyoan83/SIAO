@@ -55,6 +55,13 @@ if (isset($_GET['id'])) {
                 </nav>
             </div>
 
+            <div class="titre">
+                <h1>Actualités</h1>
+            </div>
+            <div class="phrase_intro">
+                <p>Retrouvez ici tous les articles et actualités liés au SIAO.</p>
+            </div>
+
             <div class="act">
                 <?php 
                     if (isset($_SESSION['user_name']) && $_SESSION['email']=='admin@gmail.com') {
