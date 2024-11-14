@@ -79,5 +79,22 @@ session_start();
         </div>
         <script src="Scrip.js"></script>
         </div>
+
+        <footer>
+        <ul>
+    <li>
+      F.A.Q
+    </li>
+    <li>
+      Mentions égales
+    </li>
+    <li>
+      Conditions générales
+    </li>
+    <li>
+      <a href="mailto:siaovar@gmail.com">Nous contacter </a>
+    </li>
+  </ul>
+        </footer>
     </body>
 </html>
