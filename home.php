@@ -16,14 +16,14 @@ session_start();
     <div class="body">
             <div class="top">
             <a class="imglogo" href="home.php">
-                <img class="imglogo1" src="/images/itinova.png"></a> 
+                <img class="imglogo1" src="images/itinova.png"></a> 
             <nav class="nav" id="topNav">   
                 <ul>
                     <div>
                         <div></div>
                         <a href="Service/gouvernance.php">Gouvernance</a>
                         <a href="#equipe">Equipe SIAO</a>
-                        <a href="/actualites.php">Actualité</a>
+                        <a href="actualites.php">Actualité</a>
                         <a href="#activité">Pôle d'activités</a>
                         <a href="#ressource">Ressources</a>
                         <a href="#agenda">Agenda</a>
@@ -115,23 +115,13 @@ session_start();
             </div>
         </div>
         <script src="Scrip.js"></script>
-        </div>
-
         <footer>
-        <ul>
-    <li>
-      F.A.Q
-    </li>
-    <li>
-      Mentions égales
-    </li>
-    <li>
-      Conditions générales
-    </li>
-    <li>
-      <a href="mailto:siaovar@gmail.com">Nous contacter </a>
-    </li>
-  </ul>
+            <ul>
+                <li>F.A.Q</li>
+                <li>Mentions égales</li>
+                <li>Conditions générales</li>
+                <li><a href="mailto:siaovar@gmail.com">Nous contacter </a></li>
+            </ul>
         </footer>
     </body>
 </html>
