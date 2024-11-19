@@ -1,34 +1,46 @@
-/* Styles spécifiques au formulaire de connexion uniquement */
+/* Import des polices */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
 
-@media screen and (max-width:600px) {
-    .login-container {width: 30%;}
+/* Styles globaux pour assurer l'uniformité */
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 15px;
     padding-top: 150px;
-    
+    flex-grow: 1;
 }
 
 .login-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px ;
+    background-color: #ffffff;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
+    max-width: 90%;
     text-align: center;
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #013e9a;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -36,7 +48,7 @@ h2 {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
+    color: #0056b3;
 }
 
 .input-group input {
@@ -45,6 +57,13 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007BFF;
+    outline: none;
 }
 
 .input-group button {
@@ -55,25 +74,59 @@ h2 {
     border-radius: 5px;
     color: white;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .input-group button:hover {
     background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.input-group button:active {
+    background-color: #003e80;
 }
 
 .register-link {
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 14px;
+    color: #333;
 }
 
 .register-link a {
     color: #007BFF;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .register-link a:hover {
     text-decoration: underline;
 }
 
+p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
 
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Messages d'erreur ou de succès */
+p[style="color: red;"] {
+    color: #ff0000 !important;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
