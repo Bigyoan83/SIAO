@@ -18,6 +18,7 @@ if (isset($_GET['id'])) {
         <link rel="stylesheet" type="text/css" href="css/article_admin.css"/>
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
         <title> SIAO 83 </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
@@ -26,14 +27,14 @@ if (isset($_GET['id'])) {
         <div class="body">
             <div class="top">
                 <a class="imglogo" href="home.php">
-                    <img class="imglogo1" src="images/SIAO.webp"></a> 
+                    <img class="imglogo1" src="images/itinova.png"></a> 
                 <nav class="nav" id="topNav">   
                     <ul>
                         <div>
                             <div></div>
                             <a href="Service/gouvernance.php">Gouvernance</a>
                             <a href="#equipe">Equipe SIAO</a>
-                            <a href="actualites.php" style="background-color: #79c0ff;">Actualité</a>
+                            <a href="actualites.php" style="background-color: #79c0ff; border-radius: 10px;">Actualité</a>
                             <a href="#activité">Pôle d'activités</a>
                             <a href="#ressource">Ressources</a>
                             <a href="#agenda">Agenda</a>

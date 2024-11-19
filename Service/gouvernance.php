@@ -9,6 +9,7 @@ session_start();
         <link rel="stylesheet" type="text/css" href="/css/gouvernance.css"/>
         <link rel="stylesheet" type="text/css" href="/Service/gouvernance.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
         <title> SIAO 83 </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
@@ -55,12 +56,14 @@ session_start();
                     <div class="intro-gouvernance">
                         <p>Opérateur de service public, le SIAO met en œuvre les orientations et décisions de l’Etat </p>
                     </div>
-                    <div class="paragraphe">
-                        <p>Une nouvelle gouvernance territoriale des SIAO est assurée au travers d’un Comité stratégique partenarial.Sous la présidence du préfet de département, cette instance associe l’ensemble des acteurs intervenant dans les parcours d’accès au logement,à l’hébergement et à l’accompagnement des personnes sans domicile ou mal logées </p>
-                    </div>
-                    <div class="paragraphe">
-                        <p>Les collectivités territoriales , les acteurs du champ de la santé , de l’emploi , les représentants des résidences sociales ,les bailleurs sociaux sont partie prenante  de cette gouvernance, disposant  de  compétences,de ressources et de leviers utiles et importants ; Le Comité stratégique partenarial permet de discuter collectivement de la stratégie pour la résorption du sans-abrismeou du mal logement sur le territoire, et surtout de sa mise en œuvre où chacun doit être impliqué et jouer son rôle.</p>
-                    </div>
+                    <div class="group-paragraphe">
+                        <div class="paragraphe">
+                            <p>Une nouvelle gouvernance territoriale des SIAO est assurée au travers d’un Comité stratégique partenarial.Sous la présidence du préfet de département, cette instance associe l’ensemble des acteurs intervenant dans les parcours d’accès au logement,à l’hébergement et à l’accompagnement des personnes sans domicile ou mal logées </p>
+                        </div>
+                        <div class="paragraphe">
+                            <p>Les collectivités territoriales , les acteurs du champ de la santé , de l’emploi , les représentants des résidences sociales ,les bailleurs sociaux sont partie prenante  de cette gouvernance, disposant  de  compétences,de ressources et de leviers utiles et importants ; Le Comité stratégique partenarial permet de discuter collectivement de la stratégie pour la résorption du sans-abrismeou du mal logement sur le territoire, et surtout de sa mise en œuvre où chacun doit être impliqué et jouer son rôle.</p>
+                        </div>
+                    </div> 
                 </div>
                 <div class="paragraphe">
                     <p>Le CSP permet au SIAO d’être doté d’un pilotage qui traduit l’articulation des politiques publiques entre elles et la responsabilité partagée de la gouvernance du SIAO est une co-responsabilité </p>
