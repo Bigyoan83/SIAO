@@ -58,6 +58,7 @@
                             <button type="submit">Inscription</button>
                         </div>
                     </form>
+                        <p>Vous avez déjà un compte ?  <a href="../page_connexion.php">Se connecter</a></p>
                 </div>    
             </div>  
         </div>

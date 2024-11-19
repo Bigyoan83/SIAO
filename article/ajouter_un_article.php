@@ -19,7 +19,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
         <div class="body">
             <div class="top">
                 <a class="imglogo" href="../home.php">
-                    <img class="imglogo1" src="../images/SIAO.webp"></a>
+                <img class="imglogo1" src="../images/itinova.png"></a> 
                 <nav class="nav" id="topNav">   
                     <ul>
                         <div>
@@ -33,6 +33,7 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
                             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                                 <i class="fa fa-bars"></i>
                             </a>
+
                             <!-- Vérifiez si l'utilisateur est connecté -->
                             <?php if (isset($_SESSION['user_name'])): ?>
                                 <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
@@ -57,6 +58,13 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
                             <label class="label" for="accroche">Phrase d'accroche</label><br>
                             <input class="accroche" type="text" name="accroche" rows="8" required></textarea>
                         </div>
+
+                        <div>
+                            <label class="label" for="accroche">Ajouter une image</label><br>
+                            <input class="accroche" type="file" name="accroche" rows="8" required></textarea>
+                        </div>
+
+
                         <div>
                             <label class="label" for="contenu">Contenu de l'article :</label><br>
                             <textarea class="content" name="content" rows="8" required></textarea>
