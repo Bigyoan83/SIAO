@@ -16,14 +16,14 @@ session_start();
     <div class="body">
             <div class="top">
             <a class="imglogo" href="home.php">
-                <img class="imglogo1" src="/images/itinova.png"></a> 
+                <img class="imglogo1" src="images/itinova.png"></a> 
             <nav class="nav" id="topNav">   
                 <ul>
                     <div>
                         <div></div>
                         <a href="Service/gouvernance.php">Gouvernance</a>
                         <a href="#equipe">Equipe SIAO</a>
-                        <a href="/actualites.php">Actualité</a>
+                        <a href="actualites.php">Actualité</a>
                         <a href="#activité">Pôle d'activités</a>
                         <a href="#ressource">Ressources</a>
                         <a href="#agenda">Agenda</a>
