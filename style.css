@@ -47,7 +47,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
-
+  
 }
 
 .content {
@@ -64,6 +64,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+  border-bottom: 2px solid grey;
 }
 
 .imglogo {
@@ -98,7 +99,7 @@ ul {
   font-size: 17px;
   transition-duration: 0.4s;
   margin: 2px;
-  }
+}
   
 .nav a:hover {
   background-color: #79c0ff;

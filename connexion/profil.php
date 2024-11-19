@@ -25,7 +25,7 @@ $user_name = $_SESSION['user_name'];
         <div class="body">
             <div class="top">
                 <a class="imglogo" href="../home.php">
-                    <img class="imglogo1" src="../images/SIAO.webp"></a>
+                    <img class="imglogo1" src="../images/itinova.png"></a>
                 <nav class="nav" id="topNav">  
                     <ul>
                         <div>
@@ -66,5 +66,13 @@ $user_name = $_SESSION['user_name'];
             </center>
         </div>
         <script src="../Scrip.js"></script>
+        <footer>
+            <ul>
+                <li>F.A.Q</li>
+                <li>Mentions égales</li>
+                <li>Conditions générales</li>
+                <li><a href="mailto:siaovar@gmail.com">Nous contacter </a></li>
+            </ul>
+        </footer>
     </body>
 </html>

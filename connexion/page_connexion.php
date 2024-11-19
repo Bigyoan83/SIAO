@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="../style.css"/>
         <link rel="stylesheet" href="../css/connexion.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
         <title> SIAO 83 </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
@@ -57,5 +58,13 @@
             </div>
         </div>
         <script src="../Scrip.js"></script>
+        <footer>
+            <ul>
+                <li>F.A.Q</li>
+                <li>Mentions égales</li>
+                <li>Conditions générales</li>
+                <li><a href="mailto:siaovar@gmail.com">Nous contacter </a></li>
+            </ul>
+        </footer>
     </body>
 </html>
