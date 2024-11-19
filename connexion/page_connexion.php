@@ -12,7 +12,7 @@
         <div class="body">
             <div class="top">
                 <a class="imglogo" href="../home.php">
-                    <img class="imglogo1" src="../images/SIAO.webp"></a>
+                    <img class="imglogo1" src="../images/itinova.png"></a>
                 <nav class="nav" id="topNav">
                     <ul>
                         <div>
