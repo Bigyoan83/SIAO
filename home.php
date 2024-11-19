@@ -15,7 +15,7 @@ session_start();
     <div class="body">
             <div class="top">
             <a class="imglogo" href="home.php">
-                <img class="imglogo1" src="images/SIAO.webp"></a> 
+                <img class="imglogo1" src="/images/itinova.png"></a> 
             <nav class="nav" id="topNav">   
                 <ul>
                     <div>
@@ -61,7 +61,7 @@ session_start();
                     <section class="bienvenue">
                         <h2>
                             Le SIAO 115 <br>
-                            Service intégré d’accueil et d’orientation                        
+                            Service intégré d'accueil et d'orientation                        
                         </h2>
                         <p>
                             Le SIAO constitue un élément structurant du service public de la rue au logement
