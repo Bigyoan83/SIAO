@@ -73,7 +73,15 @@ if (isset($_GET['id'])) {
                 </div>
             </div>
         </div>
-        <script src="../Scrip.js"></script>    
+        <script src="../Scrip.js"></script>
+        <footer>
+            <ul>
+                <li>F.A.Q</li>
+                <li>Mentions égales</li>
+                <li>Conditions générales</li>
+                <li><a href="mailto:siaovar@gmail.com">Nous contacter </a></li>
+            </ul>
+        </footer>   
     </body>
 </html>
 
