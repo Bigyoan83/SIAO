@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once __DIR__ . '/sentry-init.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +17,7 @@ session_start();
     <div class="body">
             <div class="top">
             <a class="imglogo" href="home.php">
-                <img class="imglogo1" src="images/itinova.png"></a> 
+                <img class="imglogo1" src="images/itinova.png"></a>
             <nav class="nav" id="topNav">   
                 <ul>
                     <div>
@@ -122,6 +123,6 @@ session_start();
                 <li>Conditions générales</li>
                 <li><a href="mailto:siaovar@gmail.com">Nous contacter </a></li>
             </ul>
-        </footer>
+        </footer>        
     </body>
 </html>
