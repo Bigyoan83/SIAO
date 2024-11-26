@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "631a35784b6022a817df2c83ffedc76e",
+=======
+    "content-hash": "3291712ba952c517958e500df5811754",
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -291,6 +295,7 @@
         },
         {
             "name": "psr/log",
+<<<<<<< HEAD
             "version": "1.1.4",
             "source": {
                 "type": "git",
@@ -305,16 +310,40 @@
             },
             "require": {
                 "php": ">=5.3.0"
+=======
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "1.1.x-dev"
+=======
+                    "dev-master": "3.x-dev"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
                 }
             },
             "autoload": {
                 "psr-4": {
+<<<<<<< HEAD
                     "Psr\\Log\\": "Psr/Log/"
+=======
+                    "Psr\\Log\\": "src"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -335,9 +364,15 @@
                 "psr-3"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
             "time": "2021-05-03T11:20:27+00:00"
+=======
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
+            },
+            "time": "2024-09-11T13:17:53+00:00"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
         },
         {
             "name": "ralouphie/getallheaders",
@@ -384,6 +419,7 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "sentry/sdk",
             "version": "4.0.0",
             "source": {
@@ -439,6 +475,8 @@
             "time": "2023-11-06T10:23:19+00:00"
         },
         {
+=======
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             "name": "sentry/sentry",
             "version": "4.10.0",
             "source": {
@@ -529,6 +567,7 @@
         },
         {
             "name": "symfony/deprecation-contracts",
+<<<<<<< HEAD
             "version": "v2.5.3",
             "source": {
                 "type": "git",
@@ -543,11 +582,31 @@
             },
             "require": {
                 "php": ">=7.1"
+=======
+            "version": "v3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
+                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-main": "2.5-dev"
+=======
+                    "dev-main": "3.5-dev"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -576,7 +635,11 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.3"
+=======
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.0"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             },
             "funding": [
                 {
@@ -592,6 +655,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-01-24T14:02:46+00:00"
         },
         {
@@ -613,6 +677,27 @@
                 "symfony/deprecation-contracts": "^2.1|^3",
                 "symfony/polyfill-php73": "~1.0",
                 "symfony/polyfill-php80": "^1.16"
+=======
+            "time": "2024-04-18T09:32:20+00:00"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "v7.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "85e95eeede2d41cd146146e98c9c81d9214cae85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/85e95eeede2d41cd146146e98c9c81d9214cae85",
+                "reference": "85e95eeede2d41cd146146e98c9c81d9214cae85",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             },
             "type": "library",
             "autoload": {
@@ -645,7 +730,11 @@
                 "options"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/options-resolver/tree/v5.4.45"
+=======
+                "source": "https://github.com/symfony/options-resolver/tree/v7.1.6"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             },
             "funding": [
                 {
@@ -661,6 +750,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-09-25T14:11:13+00:00"
         },
         {
@@ -818,15 +908,26 @@
                 }
             ],
             "time": "2024-09-09T11:45:10+00:00"
+=======
+            "time": "2024-09-25T14:20:29+00:00"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
+<<<<<<< HEAD
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
+=======
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
     "plugin-api-version": "2.6.0"
 }

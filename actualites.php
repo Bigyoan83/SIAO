@@ -34,7 +34,7 @@ if (isset($_GET['id'])) {
                         <div>
                             <div></div>
                             <a href="Service/gouvernance.php">Gouvernance</a>
-                            <a href="#equipe">Equipe SIAO</a>
+                            <a href="../equipe/equipe.php">Equipe SIAO</a>
                             <a href="actualites.php" style="background-color: #79c0ff; border-radius: 10px;">Actualité</a>
                             <a href="#activité">Pôle d'activités</a>
                             <a href="#ressource">Ressources</a>

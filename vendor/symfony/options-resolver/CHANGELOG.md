@@ -1,6 +1,24 @@
 CHANGELOG
 =========
 
+<<<<<<< HEAD
+=======
+6.4
+---
+
+* Improve message with full path on invalid type in nested option
+
+6.3
+---
+
+ * Add `OptionsResolver::setIgnoreUndefined()` and `OptionConfigurator::ignoreUndefined()` to ignore not defined options while resolving
+
+6.0
+---
+
+ * Remove `OptionsResolverIntrospector::getDeprecationMessage()`
+
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
 5.3
 ---
 

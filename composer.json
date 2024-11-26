@@ -1,6 +1,10 @@
 {
     "require": {
+<<<<<<< HEAD
         "sentry/sentry": "^4.10",
         "sentry/sdk": "^4.0"
+=======
+        "sentry/sentry": "^4.10"
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
     }
 }

@@ -22,7 +22,11 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  */
 class OptionsResolverIntrospector
 {
+<<<<<<< HEAD
     private $get;
+=======
+    private \Closure $get;
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
 
     public function __construct(OptionsResolver $optionsResolver)
     {
@@ -41,11 +45,17 @@ class OptionsResolverIntrospector
     }
 
     /**
+<<<<<<< HEAD
      * @return mixed
      *
      * @throws NoConfigurationException on no configured value
      */
     public function getDefault(string $option)
+=======
+     * @throws NoConfigurationException on no configured value
+     */
+    public function getDefault(string $option): mixed
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
     {
         return ($this->get)('defaults', $option, sprintf('No default value was set for the "%s" option.', $option));
     }
@@ -97,6 +107,7 @@ class OptionsResolverIntrospector
     }
 
     /**
+<<<<<<< HEAD
      * @return string|\Closure
      *
      * @throws NoConfigurationException on no configured deprecation
@@ -111,6 +122,8 @@ class OptionsResolverIntrospector
     }
 
     /**
+=======
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
      * @throws NoConfigurationException on no configured deprecation
      */
     public function getDeprecation(string $option): array

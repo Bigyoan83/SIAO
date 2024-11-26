@@ -49,20 +49,21 @@ if ($_SESSION['email']!='admin@gmail.com' && $_SESSION['user_name'] != 'admin'){
             <div class="ajout_article">
                 <section class="bienvenue">
                     <h2>Ajouter un nouvel article</h2>
-                    <form action="ajout_article.php" method="POST">
+                    <form action="ajout_article.php" method="POST" enctype="multipart/form-data">
                         <div>
                             <label class="label" for="titre">Titre de l'article :</label><br>
                             <input type="text" class="titre" name="titre" required>
-                        </div>
+                        </div><br>
                         <div>
                             <label class="label" for="accroche">Phrase d'accroche</label><br>
                             <input class="accroche" type="text" name="accroche" rows="8" required></textarea>
-                        </div>
+                        </div><br>
 
                         <div>
-                            <label class="label" for="accroche">Ajouter une image</label><br>
-                            <input class="accroche" type="file" name="accroche" rows="8" required></textarea>
-                        </div>
+                            <label class="label" for="screen">Ajouter une image</label><br>
+                            <input class="accroche" type="file" name="screen" id="screen">
+                            
+                        </div><br>
 
 
                         <div>
