@@ -75,7 +75,7 @@ session_start();
                 <li>F.A.Q</li>
                 <li>Mentions égales</li>
                 <li>Conditions générales</li>
-                <li><a href="mailto:siaovar@gmail.com">Nous contacter </a></li>
+                <li><a href="contact@siao115var.com">Nous contacter </a></li>
             </ul>
         </footer>
     </body>

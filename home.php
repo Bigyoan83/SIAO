@@ -114,13 +114,14 @@ session_start();
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.9782952425126!2d6.758187475365137!3d43.429632966863046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97f07281724b%3A0x87d23ffec9c62660!2sSIAO-115%20du%20VAR!5e1!3m2!1sfr!2sfr!4v1725000504505!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
             </div>
         </div>
+        
         <script src="Scrip.js"></script>
         <footer>
             <ul>
                 <li>F.A.Q</li>
                 <li>Mentions égales</li>
                 <li>Conditions générales</li>
-                <li><a href="mailto:siaovar@gmail.com">Nous contacter </a></li>
+                <li><a href="contact@siao115var.com ">Nous contacter </a></li>
             </ul>
         </footer>
     </body>
