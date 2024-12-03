@@ -3,7 +3,11 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+<<<<<<< HEAD
+        'reference' => '9888bdb874f9f73ffe0beabea3d7f95063ed3327',
+=======
         'reference' => '150b59dff9c2267cdc99c3738af4be9808ba77ca',
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +17,11 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+<<<<<<< HEAD
+            'reference' => '9888bdb874f9f73ffe0beabea3d7f95063ed3327',
+=======
             'reference' => '150b59dff9c2267cdc99c3738af4be9808ba77ca',
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -68,9 +76,15 @@
             ),
         ),
         'psr/log' => array(
+<<<<<<< HEAD
+            'pretty_version' => '1.1.4',
+            'version' => '1.1.4.0',
+            'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
+=======
             'pretty_version' => '3.0.2',
             'version' => '3.0.2.0',
             'reference' => 'f16e1d5863e37f8d8c2a01719f5b34baa2b714d3',
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             'type' => 'library',
             'install_path' => __DIR__ . '/../psr/log',
             'aliases' => array(),
@@ -85,6 +99,18 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+        'sentry/sdk' => array(
+            'pretty_version' => '4.0.0',
+            'version' => '4.0.0.0',
+            'reference' => 'fcbca864e8d1dc712f3ecfaa95ea89d024fb2e53',
+            'type' => 'metapackage',
+            'install_path' => null,
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+=======
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
         'sentry/sentry' => array(
             'pretty_version' => '4.10.0',
             'version' => '4.10.0.0',
@@ -95,22 +121,55 @@
             'dev_requirement' => false,
         ),
         'symfony/deprecation-contracts' => array(
+<<<<<<< HEAD
+            'pretty_version' => 'v2.5.3',
+            'version' => '2.5.3.0',
+            'reference' => '80d075412b557d41002320b96a096ca65aa2c98d',
+=======
             'pretty_version' => 'v3.5.0',
             'version' => '3.5.0.0',
             'reference' => '0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1',
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'symfony/options-resolver' => array(
+<<<<<<< HEAD
+            'pretty_version' => 'v5.4.45',
+            'version' => '5.4.45.0',
+            'reference' => '74e5b6f0db3e8589e6cfd5efb317a1fc2bb52fb6',
+=======
             'pretty_version' => 'v7.1.6',
             'version' => '7.1.6.0',
             'reference' => '85e95eeede2d41cd146146e98c9c81d9214cae85',
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/options-resolver',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
+        'symfony/polyfill-php73' => array(
+            'pretty_version' => 'v1.31.0',
+            'version' => '1.31.0.0',
+            'reference' => '0f68c03565dcaaf25a890667542e8bd75fe7e5bb',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-php73',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'symfony/polyfill-php80' => array(
+            'pretty_version' => 'v1.31.0',
+            'version' => '1.31.0.0',
+            'reference' => '60328e362d4c2c802a54fcbf04f9d3fb892b4cf8',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/polyfill-php80',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+=======
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
     ),
 );

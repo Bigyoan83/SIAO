@@ -1,6 +1,8 @@
 CHANGELOG
 =========
 
+<<<<<<< HEAD
+=======
 6.4
 ---
 
@@ -16,6 +18,7 @@ CHANGELOG
 
  * Remove `OptionsResolverIntrospector::getDeprecationMessage()`
 
+>>>>>>> 41783e32f3206a74ba32d807a30cdf090aa7d188
 5.3
 ---
 

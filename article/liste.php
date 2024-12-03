@@ -86,5 +86,13 @@ if (isset($_GET['id'])) {
             </div>
         </div>
         <script src="../Scrip.js"></script>
+        <footer>
+            <ul>
+                <li>F.A.Q</li>
+                <li>Mentions égales</li>
+                <li>Conditions générales</li>
+                <li><a href="contact@siao115var.com">Nous contacter </a></li>
+            </ul>
+        </footer>
     </body>
 </html>

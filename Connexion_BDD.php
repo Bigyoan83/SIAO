@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/sentry-init.php';
 //permet de se connecter a la bdd
 $serveur = "localhost";
 $utilisateur = "root";
