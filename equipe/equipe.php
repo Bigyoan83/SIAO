@@ -1,4 +1,4 @@
-<s?php
+<?php
 session_start();
 ?>
 
@@ -24,7 +24,7 @@ session_start();
                         <div></div>
                         <a href="../Service/gouvernance.php">Gouvernance</a>
                         <a href="#equipe">Equipe SIAO</a>
-                        <a href="actualites.php">Actualité</a>
+                        <a href="../actualites.php">Actualité</a>
                         <a href="#activité">Pôle d'activités</a>
                         <a href="#ressource">Ressources</a>
                         <a href="#agenda">Agenda</a>
@@ -35,10 +35,10 @@ session_start();
                         <!-- Vérifiez si l'utilisateur est connecté -->
                         <?php if (isset($_SESSION['user_name'])): ?>
                             <!-- Si l'utilisateur est connecté, on affiche le bouton Mon Profil -->
-                            <a href="connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
+                            <a href="../connexion/profil.php">Mon Profil (<?php echo htmlspecialchars($_SESSION['user_name']); ?>)</a></li>
                         <?php else: ?>
                             <!-- Sinon, on affiche le bouton de connexion -->
-                            <a href="connexion/page_connexion.php">Se Connecter/S'inscrire</a></li>
+                            <a href="../connexion/page_connexion.php">Se Connecter/S'inscrire</a></li>
                         <?php endif; ?>
 
                     </div>

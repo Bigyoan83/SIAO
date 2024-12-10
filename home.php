@@ -117,12 +117,18 @@ session_start();
         
         <script src="Scrip.js"></script>
         <footer>
-            <ul>
-                <li>F.A.Q</li>
-                <li>Mentions égales</li>
-                <li>Conditions générales</li>
-                <li><a href="contact@siao115var.com ">Nous contacter </a></li>
-            </ul>
+            <div class="contact">
+                <div class="nous-contacter">
+                    <p>E-mail : contact@siao115var.com</p>
+                    <p>Numéro : 04 94 95 16 56</p>
+                    <p>9h-12h et 14h-17h sauf les mardis et vendredis : 9h-12h</p>
+                </div>
+                <div class="footer">
+                    <p>F.A.Q</p>
+                    <p>Mentions égales</p>
+                    <p>Conditions générales</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

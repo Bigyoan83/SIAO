@@ -30,6 +30,8 @@
     margin-top: 100px;
     margin-left: 150px;
     margin-right: 150px;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;   /* Centre verticalement */
   }
   
   .image_gourvernance {
@@ -41,6 +43,7 @@
     border-radius: 10px;
     margin: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
   }
   
   .contenu-gournance {
@@ -57,7 +60,7 @@
   
   .paragraphe {
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     background-color: #e3ebf0;
     border-left: 4px solid #0056b3;
     border-radius: 5px;
