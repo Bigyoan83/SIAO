@@ -2,8 +2,9 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+
 Sentry\init([
-    'dsn' => 'https://9770748e6476547680df98c12a4ebf15@o4508363333959680.ingest.de.sentry.io/4508363545575504',
+    'dsn' => 'https://fd3f9fdaae5ef40ba0008b5c1705a931@o4508359032700928.ingest.de.sentry.io/4508648038465616',
     // Specify a fixed sample rate
     'traces_sample_rate' => 1.0,
     // Set a sampling rate for profiling - this is relative to traces_sample_rate
