@@ -34,21 +34,21 @@
             <div class="conteneur_acceuil">
                 <div class="paragraphe">
                     <h3>LES PRINCIPES</h3>
-                    <p>Le SIAO du var  organise et centralise l’offre d’hébergement et de logement ainsi que l’ensemble des demandes de prise en charge des ménages privés de "chez soi". <br><br>
+                    <p>Le SIAO du var  organise et centralise l'offre d'hébergement et de logement ainsi que l'ensemble des demandes de prise en charge des ménages privés de "chez soi". <br><br>
                     En partant toujours des usagers, il vise à proposer à chacun une orientation la plus adaptée possible à ses besoins. <br><br>
                     Le SIAO repose sur 3 principes fondamentaux sont au cœur de notre action <br><br>
-                    <li>L’inconditionnalité de l’accueil et la continuité de la prise en charge : chaque personne et famille sans domicile fixe en situation de détresse ou risquant de l’être, ayant besoin d’un hébergement, doit pouvoir y accéder, en urgence, si nécessaire, et y demeurer jusqu’à son orientation vers une proposition adaptée.</li>
-                    <li>Le « logement d’abord » : l’hébergement ne doit pas être une étape indispensable, et lorsque la situation du ménage le permet, l’accès direct au logement adapté ou ordinaire doit être privilégié, avec un accompagnement si nécessaire. Chaque personne ou famille accueillie dans un hébergement ne doit y rester que le temps nécessaire et accéder au logement dans les meilleurs délais dès lors qu’elle y est prête</li>
-                    <li>L’accès au service public : toute personne doit pouvoir trouver un service de l’accueil et de l’orientation en tout point du territoire, sans discrimination et apportant une réponse à ses besoins.</li>
+                    <li>L'inconditionnalité de l'accueil et la continuité de la prise en charge : chaque personne et famille sans domicile fixe en situation de détresse ou risquant de l'être, ayant besoin d'un hébergement, doit pouvoir y accéder, en urgence, si nécessaire, et y demeurer jusqu'à son orientation vers une proposition adaptée.</li>
+                    <li>Le « logement d'abord » : l'hébergement ne doit pas être une étape indispensable, et lorsque la situation du ménage le permet, l'accès direct au logement adapté ou ordinaire doit être privilégié, avec un accompagnement si nécessaire. Chaque personne ou famille accueillie dans un hébergement ne doit y rester que le temps nécessaire et accéder au logement dans les meilleurs délais dès lors qu'elle y est prête</li>
+                    <li>L'accès au service public : toute personne doit pouvoir trouver un service de l'accueil et de l'orientation en tout point du territoire, sans discrimination et apportant une réponse à ses besoins.</li>
                 </p> 
                 </div>
 
                 <div class="paragraphe">
                     <h3>SES OBJECTIFS</h3>
-                    <li>Simplifier les démarches d’accès à l’hébergement ou au logement (ordinaire ou adapté) pour les personnes sans domicile fixe et simplifier l’intervention des travailleurs sociaux qui les accompagnent.</li>
-                    <li>Traiter avec équité les demandes en s’appuyant sur la connaissance des disponibilités de l’ensemble de l’offre existant ; orienter la personne en tenant compte de ses besoins et non seulement en fonction de la disponibilité de telle ou telle place.</li>
-                    <li>Coordonner les différents acteurs de la veille sociale jusqu’au logement et améliorer la fluidité hébergement-logement.</li>
-                    <li>Participer à la constitution d’observatoires locaux afin de mieux évaluer les besoins et les réponses apportées.</li>
+                    <li>Simplifier les démarches d'accès à l'hébergement ou au logement (ordinaire ou adapté) pour les personnes sans domicile fixe et simplifier l'intervention des travailleurs sociaux qui les accompagnent.</li>
+                    <li>Traiter avec équité les demandes en s'appuyant sur la connaissance des disponibilités de l'ensemble de l'offre existant ; orienter la personne en tenant compte de ses besoins et non seulement en fonction de la disponibilité de telle ou telle place.</li>
+                    <li>Coordonner les différents acteurs de la veille sociale jusqu'au logement et améliorer la fluidité hébergement-logement.</li>
+                    <li>Participer à la constitution d'observatoires locaux afin de mieux évaluer les besoins et les réponses apportées.</li>
                 </div>
                 
                 <div class="paragraphe">
