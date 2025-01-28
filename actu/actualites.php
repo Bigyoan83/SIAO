@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
             <div class="act">
                 <?php 
                     if (isset($_SESSION['user_name']) && $_SESSION['email']=='admin@gmail.com') {
-                        echo '<center><a href="article/ajouter_un_article.php">Ajouter un article</a></center> ';
+                        echo '<center><a href="../article/ajouter_un_article.php">Ajouter un article</a></center> ';
                     }
                 ?><br>
                 <div class="actu">
@@ -43,9 +43,9 @@ if (isset($_GET['id'])) {
                                     if (isset($_SESSION['user_name']) && $_SESSION['email']=='admin@gmail.com') {
                                         echo '
                                         <div class="article-icons">
-                                            <a href="article/modif_article.php?id=' . $row["id"] . '">
+                                            <a href="../article/modif_article.php?id=' . $row["id"] . '">
                                                 <img src="../images/modif.png" class="icon"></a>
-                                            <a href="actualites.php?id=' . $row["id"] . '">
+                                            <a href="./actualites.php?id=' . $row["id"] . '">
                                                 <img src="../images/supprimer.png" class="icon"></a>
                                         </div>';
                                     }
