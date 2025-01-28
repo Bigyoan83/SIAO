@@ -22,10 +22,9 @@ session_start();
                     <div>
                         <div></div>
                         <a href="Service/gouvernance.php">Gouvernance</a>
-                        <a href="./equipe/equipe.php">Equipe SIAO</a>
+                        <a href="./equipe/equipe.php">Equipe SIAO/ Pôle d'activités</a>
                         <a href="actualites.php">Actualité</a>
-                        <a href="#activité">Pôle d'activités</a>
-                        <a href="#ressource">Ressources</a>
+                        <a href="https://basedeconnaissances.sisiao.dihal.gouv.fr/support/utiliser-le-si-siao" target="_blank">Ressources</a>
                         <a href="#agenda">Agenda</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
@@ -73,6 +72,7 @@ session_start();
             <div class="site_externe">
                 <a href="https://www.itinova.org/" target="_blank"><button class="redir">Itinova</button></a>
                 <a href="https://soliguide.fr/fr" target="_blank"><button class="redir">Soliguide</button></a>
+                <a href="https://sisiao.dihal.gouv.fr" target="_blank"><button class="redir">SI SIAO</button></a>
             </div>
             <div class="conteneur_acceuil">
                 <div class="paragraphe">
@@ -119,7 +119,7 @@ session_start();
         <footer>
             <div class="contact">
                 <div class="nous-contacter">
-                    <p>E-mail : contact@siao115var.com</p>
+                    <p>E-mail :<a href="mailto:votreadresse@mail.fr" target="_blank"> contact@siao115var.com</a></p>
                     <p>Numéro : 04 94 95 16 56</p>
                     <p>9h-12h et 14h-17h sauf les mardis et vendredis : 9h-12h</p>
                 </div>

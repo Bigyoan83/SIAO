@@ -10,3 +10,13 @@ Sentry\init([
     'profiles_sample_rate' => 1.0,
     'logger' => new \Sentry\Logger\DebugFileLogger('./logfile.log'),
   ]); 
+
+
+
+  try {
+    $this->functionFailsForSure();
+  } catch (\Throwable $exception) {
+    echo("ok");
+    \Sentry\captureException($exception);
+    echo("test");
+  }
