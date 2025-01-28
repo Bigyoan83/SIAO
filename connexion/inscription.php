@@ -1,5 +1,5 @@
 <?php
-include('../../Connexion_BDD.php');
+include('../Connexion_BDD.php');
 
 // Récupération des données du formulaire
 $nom = $_POST['nom'];
@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
 
     if ($stmt->execute() === TRUE) {
         // Redirection après succès
-        header("Location: ../page_connexion.php");
+        header("Location: ./page_connexion.php");
         exit();
     } else {
         echo "Erreur : " . $stmt->error;

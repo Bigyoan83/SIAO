@@ -1,36 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../style.css"/>
-        <link rel="stylesheet" href="../css/connexion.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <title> SIAO 83 </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    </head>
-    <body>
-        <div class="body">
-            <div class="top">
-                <a class="imglogo" href="../home.php">
-                    <img class="imglogo1" src="../images/itinova.png"></a>
-                <nav class="nav" id="topNav">
-                    <ul>
-                        <div>
-                            <div></div>
-                            <a href="../Service/gouvernance.php">Gouvernance</a>
-                            <a href="../equipe/equipe.php">Equipe SIAO</a>
-                            <a href="../actualites.php">Actualité</a>
-                            <a href="#activité">Pôle d'activités</a>
-                            <a href="#ressource">Ressources</a>
-                            <a href="#agenda">Agenda</a>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                        </div>
-                    </ul>    
-                </nav>
-            </div>
+<?php include_once("../navbar.php"); ?>
+<link rel="stylesheet" href="../css/connexion.css">
             <div class="container">
                 <div class="login-container">
                     <h2>Se Connecter</h2>
@@ -52,7 +21,7 @@
                         <div class="input-group">
                             <button type="submit">Connexion</button>
                         </div>
-                        <p class="register-link">Pas encore de compte ? <a href="incription/page_inscription.php">Inscrivez-vous</a></p>
+                        <p class="register-link">Pas encore de compte ? <a href="./page_inscription.php">Inscrivez-vous</a></p>
                     </form>
                 </div>
             </div>
