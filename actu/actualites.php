@@ -1,5 +1,5 @@
 <?php include_once("../navbar.php");
-
+include('../Connexion_BDD.php');
 // Suppression d'un article si l'ID est fourni
 if (isset($_GET['id'])) {
     $del = $_GET['id'];
@@ -45,7 +45,7 @@ if (isset($_GET['id'])) {
                                         <div class="article-icons">
                                             <a href="../article/modif_article.php?id=' . $row["id"] . '">
                                                 <img src="../images/modif.png" class="icon"></a>
-                                            <a href="./actualites.php?id=' . $row["id"] . '">
+                                            <a href="../actu/actualites.php?id=' . $row["id"] . '">
                                                 <img src="../images/supprimer.png" class="icon"></a>
                                         </div>';
                                     }
