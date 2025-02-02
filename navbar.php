@@ -38,7 +38,6 @@ session_start();
                             <!-- Sinon, on affiche le bouton de connexion -->
                             <a href="../connexion/page_connexion.php">Se Connecter/S'inscrire</a></li>
                         <?php endif; ?>
-
                     </div>
                 </ul>  
             </nav>

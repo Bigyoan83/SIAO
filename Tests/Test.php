@@ -6,8 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class Test extends TestCase {
 
-    public function testTitle()
-    {
+    public function test() {
         ob_start();
         include_once __DIR__ . '/../accueil/home.php';
         $output = ob_get_clean();
